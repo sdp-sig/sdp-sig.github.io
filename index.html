@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<header>
+  <title>SDP</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    $(function () {
+      $(document).scroll(function () {
+        var $nav = $(".navbar-fixed-top");
+        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+      });
+    });
+  </script>
+  
+  <script src="jquery.js"></script> 
+      <script> 
+      $(function(){
+        $("#includedContent").load("./news.html"); 
+      });
+  </script> 
+
+  <div class="intro" style="background-image: url(./images/bg.jpeg);background-repeat: no-repeat; background-size: cover;" id="home">
+	  <nav class="navbar navbar-default navbar-fixed-top navbar-collapse">
+	    <div class="container-fluid head-padding">
+	      <div class="navbar-header">
+	        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	          <span class="icon-bar"></span>
+	          <span class="icon-bar"></span>
+	          <span class="icon-bar"></span>                        
+	        </button>
+	        <a class="navbar-brand" href="#" style="color:white; font-size: 20pt;"><stong>Group-Name</stong></a>
+	      </div>
+	      <div class="collapse navbar-collapse offcanvas-collapse" id="myNavbar">
+	        <ul class="nav navbar-nav navbar-right">
+	          <li class=""><a href="#" style="color:white">HOME</a></li>
+	          <li class=""><a href="#news" title="news" style="color:white">NEWS</a></li>
+	          <li class=""><a href="#research" title="research" style="color:white">RESEACH</a></li>
+	          <li class=""><a href="#pubs" title="team" style="color:white">TEAM</a></li>
+	          <li class=""><a href="#team" title="teaching" style="color:white">TEACHING</a></li>
+	          <li class=""><a href="#contact" title="contract" style="color:white">HIRING</a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+    <div class="middle">
+      <p style="font-size: 36pt; color:black"><strong>We are</strong></p>
+      <p style="font-size: 36pt; color:black"><strong>[Group-Name] LAB</strong></p>
+      <p style="font-size: 24pt; color:yellow">Our research is focused on using program analysis and machine/deep learning to increase the reliablity, safety and quality of software systems. </p>
+    </div>
+  </div>
+
+</header>
+
+<body>
+
+  <div class="page">
+      <div class="jumbotron jumbotron-fluid" id="news">
+        <div class="container">
+          <h2><center>Recent Updates</center></h2><hr>
+          <ul>
+            <li><strong>Jul, 2022</strong> Wang Jing has successfully defended her master thesis, and won Outstanding Graduates award of Beihang University. She is moving to Bank of China.</li>
+            <li><strong>Jul, 2022</strong> <p style="font-size:12pt; color: red">TODO ziqiang 在华为开源社区的贡献<p></li>
+            <li><strong>Apr, 2022</strong> Our paper <a href="https://gaoxiang9430.github.io/papers/VulnFix.pdf">Program Vulnerability Repair via Inductive Inference</a> has been accepted by the <a href="https://conf.researchr.org/track/issta-2022/issta-2022-technical-papers">ISSTA'22</a> technical papers track.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div>
+        <div class="container" id="research">
+          <h2><center>Research</center></h2><hr>
+          <h3><strong>Research Directions</strong></h3>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-6">
+                  <div class="panel panel-success">
+                    <div class="panel-heading"><h4>Software Supply Chain Security</h4></div>
+                    <div class="panel-body">
+                      <p>To improve software development efficiency and save cost, when developing software, many enterprises rely on third-party software, which constitutes the software supply chain (SSC).
+                      Due to the dependency relations among software, vulnerabilities may cause more serious security threats in SSC than in independent software systems. This poses new challenges for ensuring software security.
+                      Our research targets the security of software supply chain, including software dependency analysis, vulnerability detection, vulnerability repair and so on.
+                      The ultimate goal is to ...
+                    </p>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="panel panel-warning">
+                  <div class="panel-heading"><h4>Operating Systen Patch Management</h5></div>
+                  <div class="panel-body">
+                    <img class="img-resonsive pull-right" src="images/synthesis.png" width="260">
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="panel panel-default">
+                  <div class="panel-heading"><h4>Trustworthy and Robust AI Models via SE4AI</h5></div>
+                  <div class="panel-body">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h3><strong>Research Papers</strong></h3>
+          <ul class="">
+            <li>
+              <h4 class=""><strong>Program Vulnerability Repair via Inductive Inference</strong>
+                <a href="./papers/VulnFix.pdf"> <img src="images/pdf.png" width="25" height="25"></a>
+                <a href="https://github.com/rshariffdeen/FixMorph"> <img src="images/github.png" width="25" height="25"></a> 
+              </h4>
+              Yuntong Zhang, Xiang Gao#, Gregory J. Duck, Abhik Roychoudhury
+              <p class="">ACM International Symposium on Software Testing and Analysis (ISSTA) 2022</p>
+            </li>
+            <li>
+              <h4 class=""><strong>APIfix: Output-Oriented Program Synthesis for Combating Breaking Changes in Libraries</strong>
+                <a href="./papers/APIFix.pdf"> <img src="images/pdf.png" width="25" height="25"></a> 
+              </h4>
+              Xiang Gao, Arjun Radhakrishna, Gustavo Soares, Ridwan Shariffdeen, Sumit Gulwani, Abhik Roychoudhury
+              <p class="">Object-Oriented Programming, Systems, Languages, and Applications (OOPSLA) 2021</p>
+            </li>
+            <li>
+                <h4 class=""><strong>Automated Patch Backporting in Linux (Experience Paper)</strong>
+                  <a href="./papers/FixMorph.pdf"> <img src="images/pdf.png" width="25" height="25"></a> 
+                  <a href="https://github.com/rshariffdeen/FixMorph"> <img src="images/github.png" width="25" height="25"></a> 
+                  <a href="https://www.youtube.com/watch?v=NUNdEJnbTI0"><img src="images/video.png" width="25" height="25"></a>
+                </h4>
+                Ridwan Shariffdeen*, Xiang Gao*, Gregory J. Duck, Shin Hwei Tan, Julia Lawall, Abhik Roychoudhury (*co-first author)
+                <p class="">International Symposium on Software Testing and Analysis (ISSTA), 2021</p>
+                <p style="color:red">Distinguished Artifact Award</p>
+            </li>
+          </ul>
+        </div>
+        <br><br>
+      </div>
+      
+      <div class="jumbotron jumbotron-fluid" id="pubs">
+        <div class="container">
+          <h2><center>Research Team</center></h2><hr>
+          <h3><strong>Faculty</strong></h3>
+          <div class="row">
+
+            <div class="col-md-6 col-xs-12 col-sm-12 col-lg-6">
+              <img class="team-img pull-left" src="images/hailong.jpg" width="260">
+              <br>
+              <h3 class="my-2"><a href="https://hsun2022.github.io/">Hailong Sun (孙海龙)</a></h3>
+              <h4 class="">Professor</h4>
+              <h4 class="">School of Software, Beihang</h4>
+              <h4 class=""><img src="./images/email.png" width="25" height="25"> sunhl [at] buaa.edu.cn</h4>
+            </div>
+            
+
+            <div class="col-md-6 col-xs-12 col-sm-12 col-lg-6">
+              <img class="team-img pull-left" src="images/gaoxiang.jpg">
+              <br>
+              <h3 class="my-2"><a href="https://gaoxiang9430.github.io">Xiang Gao (高祥)</a></h3>
+              <h4 class="">Associate Professor</h4>
+              <h4 class="">School of Software, Beihang</h4>
+              <h4 class=""><img src="./images/email.png" width="25" height="25"> xiang_gao [at] buaa.edu.cn</h4>
+            </div>
+          </div>
+
+
+          <br>
+          <h3><strong>Students</strong></h3>
+          <div id="row">
+            <div class="col-md-3 col-sm-6">
+              <div class="thumbnail">
+                <img class="img-circle" alt="..." src="https://play-lh.googleusercontent.com/XVHP0sBKrRJYZq_dB1RalwSmx5TcYYRRfYMFO18jgNAnxHAIA1osxM55XHYTb3LpkV8=w240-h480-rw"> 
+                <p class="header">Binhang Qi</p>
+                <p class="b">Ph.D.</p>
+                <p class="b">AI Model Modulization</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="thumbnail">
+                <img class="img-circle" alt="..." src="https://play-lh.googleusercontent.com/XVHP0sBKrRJYZq_dB1RalwSmx5TcYYRRfYMFO18jgNAnxHAIA1osxM55XHYTb3LpkV8=w240-h480-rw"> 
+                <p class="header">Yijun Shen</p>
+                <p class="b">Ph.D.</p>
+                <p class="b">Software Supply Chain</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div>
+        <div class="container" id="team">
+          <h2><center>Teaching</center></h2><hr>
+          <h4>Introduction to Open Source Software Development</h4>
+          <h4>Intelligent Software Engineering</h4>
+        </div>
+        <br><br>
+      </div>
+
+      <div class="jumbotron jumbotron-fluid" id="contact">
+        <div class="container">
+          <h2><center>Hiring</center></h2><hr>
+          We are looking for highly self-motivated intern/master/phd students to work with us. Please send email to sunhl@buaa.edu.cn or xiang_gao@buaa.edu.cn if you are interested. We also have postdoc positions available.
+        </div>
+      </div>
+      <br> 
+  </div>
+</body>
+
+</html>
