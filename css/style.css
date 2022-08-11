@@ -1,0 +1,106 @@
+html {
+}
+
+div.intro {
+  height:100vh;
+  width:100%;
+}
+
+body {
+    padding-top:0px;
+    margin-left:auto;
+    margin-right:auto
+}
+
+div.middle2 {
+  display: block;
+  position: relative;
+  top: 25%;
+  left: 25%;
+  width: 50%; /* Can be in percentage also. */
+  height: auto;
+  vertical-align: middle;
+  text-align: center;
+  background: rgba(55, 55, 55, 0.3);
+}
+
+div.middle {
+  display: block;
+  position: relative;
+  top: 25%;
+  max-width: 1024px;
+  margin-left:auto;
+  margin-right:auto;
+  height: auto;
+  vertical-align: middle;
+  text-align: center;
+  background: rgba(55, 55, 55, 0.3);
+}
+
+div.head-padding{
+  padding-left: 15%;;
+  padding-right:15%;
+}
+
+p {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12pt;
+}
+
+p.a {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16 pt;
+  margin-left: 30px;
+}
+
+p.b {
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: center;
+  font-size: 10pt;
+}
+
+p.header {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14pt;
+  color:blue;
+  text-align: center;
+}
+
+li {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12pt;
+}
+
+.navbar-fixed-top {
+  background-color: rgba(10, 14, 247, 0.3) !important;
+  transition: background-color 200ms linear;
+}
+
+.navbar-fixed-top.scrolled {
+  background-color: rgb(9, 11, 26) !important;
+  transition: background-color 200ms linear;
+}
+
+.thumbnail {
+  background: transparent;
+  border: 0;
+}
+
+.teammember {
+  padding: 3px;
+  color: #5a5a5a;
+}
+
+.team-img{
+  width:236px;
+  height:236px;
+  object-fit:cover;
+  border-radius:50%;
+}
+
+hr {
+  height: 2px;
+  width: 100px;
+  background-color: #0000ff;
+  border: none;
+}
