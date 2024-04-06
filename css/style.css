@@ -104,3 +104,114 @@ hr {
   background-color: #0000ff;
   border: none;
 }
+
+
+/* 文件名：styles.css */
+.img-circle.student-img {
+  border-radius: 50% !important;
+  width: 100px !important;
+  height: 100px !important;
+  object-fit: cover !important;
+}
+
+.header a {
+  color: inherit; /* 继承父元素的字体颜色 */
+  text-decoration: none; /* 去除下划线 */
+}
+
+.header a:hover {
+  text-decoration: underline; /* 鼠标悬停时添加下划线 */
+}
+.paper-box {
+  display: flex; /* 启用Flexbox布局 */
+  align-items: center; /* 垂直居中对齐 */
+  justify-content: space-between; /* 元素之间保持等距 */
+  padding: 16px; /* 或者你需要的内边距 */
+}
+
+.paper-box-image,
+.paper-box-text {
+  flex: 1; /* 两个盒子将平分可用空间 */
+}
+
+.paper-box-image {
+  margin-right: 16px; /* 或者你需要的空间，为文本盒子提供一些间隔 */
+}
+
+img {
+  max-width: 100%; /* 确保图像不会超过其容器的宽度 */
+  height: auto; /* 保持图像原始宽高比 */
+}
+
+.badge {
+  position: absolute; /* 如果需要，可以根据具体情况调整定位 */
+  /* 其他样式 */
+}
+
+/* 如果你希望在较小的屏幕上堆叠这些盒子，可以添加一个媒体查询 */
+@media (max-width: 768px) {
+  .paper-box {
+      flex-direction: column; /* 在小屏幕上堆叠盒子 */
+  }
+
+  .paper-box-image {
+      margin-right: 0; /* 在堆叠布局中不需要右边距 */
+  }
+
+  .paper-box-text {
+      margin-top: 16px; /* 在图像下方添加一些间隔 */
+  }
+}
+
+
+#publications {
+  padding-bottom: 10px; /* 或你希望的任何值，为边框提供一些空间 */
+  border-bottom: 2px solid #f0eeee; /* 设置边框的宽度和颜色 */
+  margin-bottom: 20px; /* 在分割线下方提供一些额外空间 */
+}
+
+
+     下拉菜单的基础样式
+    .dropdown {
+      position: relative;
+      display: inline-block;
+  }
+
+  /* 下拉菜单内容 */
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+  }
+
+  /* 下拉菜单项 */
+  .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+  }
+
+  /* 下拉菜单项 - 鼠标悬停时的样式 */
+  .dropdown-content a:hover {background-color: #f1f1f1}
+
+  /* 显示下拉菜单内容 */
+  .dropdown:hover .dropdown-content {
+      display: block;
+  }
+
+  /* 下拉菜单触发器 */
+  .dropbtn {
+      background-color: transparent;
+      color: white;
+      padding: 13px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+  }
+
+
+
