@@ -1,12 +1,40 @@
 {
     "students": [
         {
+            "name": "Zhe Zhang",
+            "image": "./images/zhangzhe.jpg",
+            "degree": "Master",
+            "grade": 2023,
+            "direction": "Fuzzing",
+            "placement": null,
+            "group": "SE"
+        },
+        {
+            "name": "Yuanzhang Lin",
+            "image": "./images/linyuanzhang.jpg",
+            "degree": "Ph.D.",
+            "grade": 2023,
+            "direction": "UI Testing",
+            "placement": null,
+            "group": "SE"
+        },
+        {
+            "name": "Yixin Yang",
+            "image": "./images/yangyixin.jpg",
+            "degree": "Ph.D.",
+            "grade": 2023,
+            "direction": "AI4SE",
+            "placement": null,
+            "group": "SE"
+        },
+        {
             "name": "Zhijun Chen",
             "image": "./images/chenzhijun.jpg",
             "degree": "Ph.D.",
             "grade": 2018,
             "direction": "Deep Learning",
-            "placement": null
+            "placement": null,
+            "group": "AI"
         },
         {
             "name": "Chengbing Sun",
@@ -14,7 +42,8 @@
             "degree": "Ph.D.",
             "grade": 2019,
             "direction": "Advers. Machine Learning",
-            "placement": null
+            "placement": null,
+            "group": "AI"
         },
         {
             "name": "Lei Chai",
@@ -22,7 +51,8 @@
             "degree": "Ph.D.",
             "grade": 2020,
             "direction": "Machine Learning",
-            "placement": null
+            "placement": null,
+            "group": "AI"
         },
         {
             "name": "Yijun Shen",
@@ -30,7 +60,8 @@
             "degree": "Ph.D.",
             "grade": 2020,
             "direction": "Software Supply Chain",
-            "placement": null
+            "placement": null,
+            "group": "SE"
         },
         {
             "name": "Zhongchi Wang",
@@ -38,7 +69,8 @@
             "degree": "Ph.D.",
             "grade": 2021,
             "direction": "Deep Learning",
-            "placement": null
+            "placement": null,
+            "group": "AI"
         },
         {
             "name": "Liyou Chen",
@@ -46,7 +78,8 @@
             "degree": "Ph.D.",
             "grade": 2022,
             "direction": "Software Supply Chain",
-            "placement": null
+            "placement": null,
+            "group": "SE"
         },
         {
             "name": "Chunyi Xu",
@@ -54,7 +87,8 @@
             "degree": "Master",
             "grade": 2021,
             "direction": "Software Supply Chain",
-            "placement": null
+            "placement": null,
+            "group": "SE"
         },
         {
             "name": "Rui Sui",
@@ -62,15 +96,17 @@
             "degree": "Master",
             "grade": 2021,
             "direction": "Software Supply Chain",
-            "placement": null
+            "placement": null,
+            "group": "SE"
         },
         {
             "name": "Zhaotian Li",
             "image": "./images/lizhaotian.png",
             "degree": "Master",
-            "grade": 2021,
+            "grade": 2022,
             "direction": "SE4AI",
-            "placement": null
+            "placement": null,
+            "group": "SE4AI"
         },
         {
             "name": "Qianwei Wang",
@@ -78,7 +114,8 @@
             "degree": "Master",
             "grade": 2021,
             "direction": "SE4AI",
-            "placement": null
+            "placement": null,
+            "group": "SE4AI"
         },
         {
             "name": "Lu Qi",
@@ -86,23 +123,26 @@
             "degree": "Master",
             "grade": 2021,
             "direction": "Machine Learning",
-            "placement": null
+            "placement": null,
+            "group": "AI"
         },
         {
             "name": "Wentong Tian",
             "image": "./images/tianwentong.jpg",
-            "degree": "Master",
+            "degree": "Ph.D.",
             "grade": 2022,
             "direction": "Software Supply Chain",
-            "placement": null
+            "placement": null,
+            "group": "SE"
         },
         {
             "name": "Yunlong Ma",
             "image": "./images/mayunlong.jpg",
-            "degree": "Master",
+            "degree": "Ph.D.",
             "grade": 2022,
             "direction": "Software Supply Chain",
-            "placement": null
+            "placement": null,
+            "group": "SE"
         },
         {
             "name": "Qingao Dong",
@@ -110,7 +150,8 @@
             "degree": "Master",
             "grade": 2022,
             "direction": "Vulnerability Repair",
-            "placement": null
+            "placement": null,
+            "group": "SE"
         },
         {
             "name": "Jingdong Zhang",
@@ -118,7 +159,8 @@
             "degree": "Master",
             "grade": 2022,
             "direction": "SE4AI",
-            "placement": null
+            "placement": null,
+            "group": "SE4AI"
         },
         {
             "name": "Shuo Hong",
@@ -126,7 +168,8 @@
             "degree": "Master",
             "grade": 2022,
             "direction": "SE4AI",
-            "placement": null
+            "placement": null,
+            "group": "SE"
         },
         {
             "name": "Runzhang Chen",
@@ -134,23 +177,24 @@
             "degree": "Master",
             "grade": 2022,
             "direction": "Machine Learning",
-            "placement": null
+            "placement": null,
+            "group": "AI"
         }
     ],
     "former_students": [
+        {
+            "name": "Binhang Qi",
+            "image": "./images/qibinhang.jpg",
+            "degree": "Ph.D.",
+            "grade": 2020,
+            "placement": "Move to NUS as Postdoc"
+        },
         {
             "name": "Zizhe Wang",
             "image": "./images/wangzizhe.jpg",
             "degree": "Ph.D.",
             "grade": 2017,
             "placement": "Move to Qiyuan Laboratory"
-        },
-        {
-            "name": "Jing Wang",
-            "image": "https://play-lh.googleusercontent.com/XVHP0sBKrRJYZq_dB1RalwSmx5TcYYRRfYMFO18jgNAnxHAIA1osxM55XHYTb3LpkV8=w240-h480-rw",
-            "degree": "Master",
-            "grade": 2019,
-            "placement": "Moved to Bank of China"
         },
         {
             "name": "Pengpeng Chen",
@@ -188,11 +232,11 @@
             "placement": "Moved to Zhejiang Gongshang University"
         },
         {
-            "name": "Binhang Qi",
-            "image": "./images/qibinhang.jpg",
-            "degree": "Ph.D.",
-            "grade": 2020,
-            "placement": "Move to NUS as Postdoc"
+            "name": "Jing Wang",
+            "image": "https://play-lh.googleusercontent.com/XVHP0sBKrRJYZq_dB1RalwSmx5TcYYRRfYMFO18jgNAnxHAIA1osxM55XHYTb3LpkV8=w240-h480-rw",
+            "degree": "Master",
+            "grade": 2019,
+            "placement": "Moved to Bank of China"
         },
         {
             "name": "Chongpeng Li",

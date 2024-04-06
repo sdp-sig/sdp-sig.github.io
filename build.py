@@ -3,12 +3,8 @@ import json
 index_template_file="template/index.html"
 paper_data="data/papers"
 
-def generate_main(index_content, paper_list, student_list):
-    if paper_list!=None:
-        index_content = index_content.replace("<!--PAPER-LIST-->", paper_list)
-    if student_list!=None:
-        index_content = index_content.replace("<!--STUDENT-LIST-->", student_list)
-    write_file("index.html", index_content)
+def generate_html(content, tag, replacement):
+    return content.replace("<!--" + tag + "-->", replacement)
 
 def read_file(filename):
     with open(filename, 'r') as file:
@@ -69,31 +65,36 @@ def build_student(name, image, degree, grade, direction, placement):
     else:
         student_content = student_content.replace(" GRADE", "")
     if direction!=None:
-        student_content = student_content + "<p class=\"b\">" + direction + "</p>\n"
+        student_content = student_content + "              <p class=\"b\">" + direction + "</p>\n"
     if placement!=None:
-        student_content = student_content + "<p class=\"b\">" + placement + "</p>\n"
+        student_content = student_content + "              <p class=\"b\">" + placement + "</p>\n"
     student_content += "            </div>\n \
           </div>\n"
     return student_content
                                 
 
-def build_student_list():
+def build_student_list(filter=None):
     with open('data/student.json') as json_file:
         students = json.load(json_file)
-    student_list_content = "        <h3><strong>Students</strong></h3>\n \
-        <div class=\"row custom-row\">\n"
+    student_list_content = "        <div class=\"row custom-row\">\n"
     # current students
-    for student in students["students"]:
+    current_students = sorted(students["students"], key=lambda x: (x["degree"]=="Master", x["grade"]), reverse=False)
+    for student in current_students:
+        if filter!=None and not filter(student):
+            continue
         student_content = build_student(student["name"], student["image"], student["degree"],\
                                         str(student["grade"]), student["direction"], None)
         student_list_content = student_list_content + student_content
     student_list_content = student_list_content + "        </div>\n"
+    return student_list_content
 
+def build_former_student_list(filter=None):
     # Former students
     student_list_content = student_list_content + "        <br>\n \
         <h3><strong>Former Students</strong></h3>\n \
         <div class=\"row custom-row\">\n"
-    for student in students["former_students"]:
+    former_students = students["former_students"]
+    for student in former_students:
         student_content = build_student(student["name"], student["image"], student["degree"],\
                                         str(student["grade"]), None, student["placement"],)
         student_list_content = student_list_content + student_content
@@ -101,7 +102,23 @@ def build_student_list():
 
     return student_list_content
 
+def ssc_master_filter(student):
+    return student["group"]=="SE" and student["degree"]=="Master"
+
+def ssc_phd_filter(student):
+    return student["group"]=="SE" and student["degree"]=="Ph.D."
+
 index_template_content = read_file(index_template_file)
-# paper_content = build_selected_paper_list()
-student_content = build_student_list()
-generate_main(index_template_content, None, student_content)
+paper_content = build_selected_paper_list()
+content = generate_html(index_template_content, "PAPER-LIST", paper_content)
+# student_content = build_student_list()
+# student_content += build_former_student_list()
+# content = generate_html(content, "STUDENT-LIST", student_content)
+write_file("index.html", content)
+
+ssc_content = read_file("template/ssc.html")
+ssc_phd_content = build_student_list(ssc_phd_filter)
+ssc_content = generate_html(ssc_content, "PHD_STUDENT_AI4SE", ssc_phd_content)
+ssc_master_content = build_student_list(ssc_master_filter)
+ssc_content = generate_html(ssc_content, "MASTER_STUDENT_AI4SE", ssc_master_content)
+write_file("ssc.html", ssc_content)
