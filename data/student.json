@@ -1,0 +1,227 @@
+{
+    "students": [
+        {
+            "name": "Zhijun Chen",
+            "image": "./images/chenzhijun.jpg",
+            "degree": "Ph.D.",
+            "grade": 2018,
+            "direction": "Deep Learning",
+            "placement": null
+        },
+        {
+            "name": "Chengbing Sun",
+            "image": "./images/sunchengbin.jpg",
+            "degree": "Ph.D.",
+            "grade": 2019,
+            "direction": "Advers. Machine Learning",
+            "placement": null
+        },
+        {
+            "name": "Lei Chai",
+            "image": "./images/chailei.jpg",
+            "degree": "Ph.D.",
+            "grade": 2020,
+            "direction": "Machine Learning",
+            "placement": null
+        },
+        {
+            "name": "Yijun Shen",
+            "image": "./images/shenyijun.jpg",
+            "degree": "Ph.D.",
+            "grade": 2020,
+            "direction": "Software Supply Chain",
+            "placement": null
+        },
+        {
+            "name": "Zhongchi Wang",
+            "image": "./images/wangzhongchi.jpg",
+            "degree": "Ph.D.",
+            "grade": 2021,
+            "direction": "Deep Learning",
+            "placement": null
+        },
+        {
+            "name": "Liyou Chen",
+            "image": "./images/chenliyou.jpg",
+            "degree": "Ph.D.",
+            "grade": 2022,
+            "direction": "Software Supply Chain",
+            "placement": null
+        },
+        {
+            "name": "Chunyi Xu",
+            "image": "./images/xuchunyi.jpg",
+            "degree": "Master",
+            "grade": 2021,
+            "direction": "Software Supply Chain",
+            "placement": null
+        },
+        {
+            "name": "Rui Sui",
+            "image": "./images/suirui.jpg",
+            "degree": "Master",
+            "grade": 2021,
+            "direction": "Software Supply Chain",
+            "placement": null
+        },
+        {
+            "name": "Zhaotian Li",
+            "image": "./images/lizhaotian.png",
+            "degree": "Master",
+            "grade": 2021,
+            "direction": "SE4AI",
+            "placement": null
+        },
+        {
+            "name": "Qianwei Wang",
+            "image": "./images/wangqianwei.jpg",
+            "degree": "Master",
+            "grade": 2021,
+            "direction": "SE4AI",
+            "placement": null
+        },
+        {
+            "name": "Lu Qi",
+            "image": "./images/qilu.jpg",
+            "degree": "Master",
+            "grade": 2021,
+            "direction": "Machine Learning",
+            "placement": null
+        },
+        {
+            "name": "Wentong Tian",
+            "image": "./images/tianwentong.jpg",
+            "degree": "Master",
+            "grade": 2022,
+            "direction": "Software Supply Chain",
+            "placement": null
+        },
+        {
+            "name": "Yunlong Ma",
+            "image": "./images/mayunlong.jpg",
+            "degree": "Master",
+            "grade": 2022,
+            "direction": "Software Supply Chain",
+            "placement": null
+        },
+        {
+            "name": "Qingao Dong",
+            "image": "./images/dongqingao.jpg",
+            "degree": "Master",
+            "grade": 2022,
+            "direction": "Vulnerability Repair",
+            "placement": null
+        },
+        {
+            "name": "Jingdong Zhang",
+            "image": "./images/zhangjingdong.jpg",
+            "degree": "Master",
+            "grade": 2022,
+            "direction": "SE4AI",
+            "placement": null
+        },
+        {
+            "name": "Shuo Hong",
+            "image": "./images/hongshuo.jpg",
+            "degree": "Master",
+            "grade": 2022,
+            "direction": "SE4AI",
+            "placement": null
+        },
+        {
+            "name": "Runzhang Chen",
+            "image": "./images/chenrunzhang.png",
+            "degree": "Master",
+            "grade": 2022,
+            "direction": "Machine Learning",
+            "placement": null
+        }
+    ],
+    "former_students": [
+        {
+            "name": "Zizhe Wang",
+            "image": "./images/wangzizhe.jpg",
+            "degree": "Ph.D.",
+            "grade": 2017,
+            "placement": "Move to Qiyuan Laboratory"
+        },
+        {
+            "name": "Jing Wang",
+            "image": "https://play-lh.googleusercontent.com/XVHP0sBKrRJYZq_dB1RalwSmx5TcYYRRfYMFO18jgNAnxHAIA1osxM55XHYTb3LpkV8=w240-h480-rw",
+            "degree": "Master",
+            "grade": 2019,
+            "placement": "Moved to Bank of China"
+        },
+        {
+            "name": "Pengpeng Chen",
+            "image": "./images/chenpengpeng.jpg",
+            "degree": "PhD",
+            "grade": null,
+            "placement": "Moved to China Institute of Aeronautical Technology 501"
+        },
+        {
+            "name": "Wei Yuan",
+            "image": "./images/yuanwei.jpg",
+            "degree": "PhD",
+            "grade": null,
+            "placement": "Moved to CCID Group"
+        },
+        {
+            "name": "Mohammad Ali Shabaz",
+            "image": "https://play-lh.googleusercontent.com/XVHP0sBKrRJYZq_dB1RalwSmx5TcYYRRfYMFO18jgNAnxHAIA1osxM55XHYTb3LpkV8=w240-h480-rw",
+            "degree": "PhD",
+            "grade": null,
+            "placement": "Moved to Pakistan"
+        },
+        {
+            "name": "Tao Han",
+            "image": "https://play-lh.googleusercontent.com/XVHP0sBKrRJYZq_dB1RalwSmx5TcYYRRfYMFO18jgNAnxHAIA1osxM55XHYTb3LpkV8=w240-h480-rw",
+            "degree": "PhD",
+            "grade": null,
+            "placement": "Moved to Zhejiang Gongshang University"
+        },
+        {
+            "name": "Yili Fang",
+            "image": "https://play-lh.googleusercontent.com/XVHP0sBKrRJYZq_dB1RalwSmx5TcYYRRfYMFO18jgNAnxHAIA1osxM55XHYTb3LpkV8=w240-h480-rw",
+            "degree": "PhD",
+            "grade": null,
+            "placement": "Moved to Zhejiang Gongshang University"
+        },
+        {
+            "name": "Binhang Qi",
+            "image": "./images/qibinhang.jpg",
+            "degree": "Ph.D.",
+            "grade": 2020,
+            "placement": "Move to NUS as Postdoc"
+        },
+        {
+            "name": "Chongpeng Li",
+            "image": "./images/lichongpeng.jpg",
+            "degree": "Master",
+            "grade": 2020,
+            "placement": null
+        },
+        {
+            "name": "Yongqiang Yang",
+            "image": "./images/yangyongqiang.jpg",
+            "degree": "Master",
+            "grade": 2020,
+            "placement": null
+        },
+        {
+            "name": "Haoqian He",
+            "image": "./images/hehaoqian.jpg",
+            "degree": "Master",
+            "grade": 2020,
+            "placement": null
+        },
+        {
+            "name": "Jingyue Wang",
+            "image": "./images/wangjingyue.jpg",
+            "degree": "Master",
+            "grade": 2020,
+            "direction": "SE4AI",
+            "placement": null
+        }
+    ]
+}
