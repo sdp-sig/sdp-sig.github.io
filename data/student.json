@@ -2,7 +2,7 @@
     "students": [
         {
             "name": "Chenfan Li",
-            "image": "./images/cat.webp",
+            "image": null,
             "degree": "Ph.D.",
             "grade": 2024,
             "direction": "TBD",
@@ -11,7 +11,7 @@
         },
         {
             "name": "Yifan An",
-            "image": "./images/cat.webp",
+            "image": null,
             "degree": "Master",
             "grade": 2024,
             "direction": "TBD",
@@ -20,7 +20,7 @@
         },
         {
             "name": "Xingyu Liu",
-            "image": "./images/cat.webp",
+            "image": null,
             "degree": "Master",
             "grade": 2024,
             "direction": "TBD",
@@ -29,7 +29,7 @@
         },
         {
             "name": "Rui He",
-            "image": "./images/cat.webp",
+            "image": null,
             "degree": "Master",
             "grade": 2024,
             "direction": "TBD",
@@ -38,7 +38,7 @@
         },
         {
             "name": "Chang Liu",
-            "image": "./images/cat.webp",
+            "image": "liuchang.jpg",
             "degree": "Master",
             "grade": 2024,
             "direction": "TBD",
@@ -47,7 +47,7 @@
         },
         {
             "name": "Xingjing Deng",
-            "image": "./images/cat.webp",
+            "image": null,
             "degree": "Master",
             "grade": 2024,
             "direction": "Static program analysis",
@@ -56,7 +56,7 @@
         },
         {
             "name": "Zhe Zhang",
-            "image": "./images/zhangzhe.jpg",
+            "image": "zhangzhe.jpg",
             "degree": "Master",
             "grade": 2023,
             "direction": "Fuzzing",
@@ -65,7 +65,7 @@
         },
         {
             "name": "Bowen Xu",
-            "image": "./images/cat.webp",
+            "image": null,
             "degree": "Master",
             "grade": 2023,
             "direction": "LLM for vulnerability analysis",
@@ -74,7 +74,7 @@
         },
         {
             "name": "Hao Gao",
-            "image": "./images/cat.webp",
+            "image": null,
             "degree": "Master",
             "grade": 2023,
             "direction": "LLM for code generation",
@@ -83,7 +83,7 @@
         },
         {
             "name": "Yi Xu",
-            "image": "./images/cat.webp",
+            "image": null,
             "degree": "Master",
             "grade": 2023,
             "direction": "Software Supply Chain",
@@ -92,7 +92,7 @@
         },
         {
             "name": "Yu Guo ",
-            "image": "./images/cat.webp",
+            "image": null,
             "degree": "Master",
             "grade": 2023,
             "direction": "Software Supply Chain",
@@ -101,7 +101,7 @@
         },
         {
             "name": "Zuozhou Zhang",
-            "image": "./images/cat.webp",
+            "image": null,
             "degree": "Master",
             "grade": 2023,
             "direction": "Software Supply Chain",
@@ -110,7 +110,7 @@
         },
         {
             "name": "Yuanzhang Lin",
-            "image": "./images/linyuanzhang.jpg",
+            "image": "linyuanzhang.jpg",
             "degree": "Ph.D.",
             "grade": 2023,
             "direction": "UI Testing",
@@ -119,7 +119,7 @@
         },
         {
             "name": "Yixin Yang",
-            "image": "./images/yangyixin.jpg",
+            "image": "yangyixin.jpg",
             "degree": "Ph.D.",
             "grade": 2023,
             "direction": "Vulnerability detection",
@@ -128,7 +128,7 @@
         },
         {
             "name": "Zhijun Chen",
-            "image": "./images/chenzhijun.jpg",
+            "image": "chenzhijun.jpg",
             "degree": "Ph.D.",
             "grade": 2018,
             "direction": "Deep Learning",
@@ -137,7 +137,7 @@
         },
         {
             "name": "Chengbing Sun",
-            "image": "./images/sunchengbin.jpg",
+            "image": "sunchengbin.jpg",
             "degree": "Ph.D.",
             "grade": 2019,
             "direction": "Advers. Machine Learning",
@@ -146,7 +146,7 @@
         },
         {
             "name": "Lei Chai",
-            "image": "./images/chailei.jpg",
+            "image": "chailei.jpg",
             "degree": "Ph.D.",
             "grade": 2020,
             "direction": "Machine Learning",
@@ -155,7 +155,7 @@
         },
         {
             "name": "Yijun Shen",
-            "image": "./images/shenyijun.jpg",
+            "image": "shenyijun.jpg",
             "degree": "Ph.D.",
             "grade": 2020,
             "direction": "Software Supply Chain",
@@ -164,7 +164,7 @@
         },
         {
             "name": "Zhongchi Wang",
-            "image": "./images/wangzhongchi.jpg",
+            "image": "wangzhongchi.jpg",
             "degree": "Ph.D.",
             "grade": 2021,
             "direction": "Deep Learning",
@@ -173,7 +173,7 @@
         },
         {
             "name": "Liyou Chen",
-            "image": "./images/chenliyou.jpg",
+            "image": "chenliyou.jpg",
             "degree": "Ph.D.",
             "grade": 2022,
             "direction": "Vulnerability recognization",
@@ -182,7 +182,7 @@
         },
         {
             "name": "Chunyi Xu",
-            "image": "./images/xuchunyi.jpg",
+            "image": "xuchunyi.jpg",
             "degree": "Master",
             "grade": 2021,
             "direction": "Software Supply Chain",
@@ -191,7 +191,7 @@
         },
         {
             "name": "Rui Sui",
-            "image": "./images/suirui.jpg",
+            "image": "suirui.jpg",
             "degree": "Master",
             "grade": 2021,
             "direction": "Software Supply Chain",
@@ -200,7 +200,7 @@
         },
         {
             "name": "Zhaotian Li",
-            "image": "./images/lizhaotian.png",
+            "image": "lizhaotian.png",
             "degree": "Master",
             "grade": 2022,
             "direction": "SE4AI",
@@ -209,7 +209,7 @@
         },
         {
             "name": "Qianwei Wang",
-            "image": "./images/wangqianwei.jpg",
+            "image": "wangqianwei.jpg",
             "degree": "Master",
             "grade": 2021,
             "direction": "SE4AI",
@@ -218,7 +218,7 @@
         },
         {
             "name": "Lu Qi",
-            "image": "./images/qilu.jpg",
+            "image": "qilu.jpg",
             "degree": "Master",
             "grade": 2021,
             "direction": "Machine Learning",
@@ -227,7 +227,7 @@
         },
         {
             "name": "Wentong Tian",
-            "image": "./images/tianwentong.jpg",
+            "image": "tianwentong.jpg",
             "degree": "Ph.D.",
             "grade": 2022,
             "direction": "LLM for vulnerability analysis",
@@ -236,7 +236,7 @@
         },
         {
             "name": "Yunlong Ma",
-            "image": "./images/mayunlong.jpg",
+            "image": "mayunlong.jpg",
             "degree": "Ph.D.",
             "grade": 2022,
             "direction": "Combining static analysis with LLM",
@@ -245,7 +245,7 @@
         },
         {
             "name": "Qingao Dong",
-            "image": "./images/dongqingao.jpg",
+            "image": "dongqingao.jpg",
             "degree": "Master",
             "grade": 2022,
             "direction": "Vulnerability Repair",
@@ -254,7 +254,7 @@
         },
         {
             "name": "Jingdong Zhang",
-            "image": "./images/zhangjingdong.jpg",
+            "image": "zhangjingdong.jpg",
             "degree": "Master",
             "grade": 2022,
             "direction": "SE4AI",
@@ -263,7 +263,7 @@
         },
         {
             "name": "Shuo Hong",
-            "image": "./images/hongshuo.jpg",
+            "image": "hongshuo.jpg",
             "degree": "Master",
             "grade": 2022,
             "direction": "Static program analysis",
@@ -272,7 +272,7 @@
         },
         {
             "name": "Runzhang Chen",
-            "image": "./images/chenrunzhang.png",
+            "image": "chenrunzhang.png",
             "degree": "Master",
             "grade": 2022,
             "direction": "Machine Learning",
@@ -283,28 +283,28 @@
     "former_students": [
         {
             "name": "Binhang Qi",
-            "image": "./images/qibinhang.jpg",
+            "image": "qibinhang.jpg",
             "degree": "Ph.D.",
             "grade": 2020,
             "placement": "Move to NUS as Postdoc"
         },
         {
             "name": "Zizhe Wang",
-            "image": "./images/wangzizhe.jpg",
+            "image": "wangzizhe.jpg",
             "degree": "Ph.D.",
             "grade": 2017,
             "placement": "Move to Qiyuan Laboratory"
         },
         {
             "name": "Pengpeng Chen",
-            "image": "./images/chenpengpeng.jpg",
+            "image": "chenpengpeng.jpg",
             "degree": "PhD",
             "grade": null,
             "placement": "Moved to China Institute of Aeronautical Technology 501"
         },
         {
             "name": "Wei Yuan",
-            "image": "./images/yuanwei.jpg",
+            "image": "yuanwei.jpg",
             "degree": "PhD",
             "grade": null,
             "placement": "Moved to CCID Group"
@@ -339,28 +339,28 @@
         },
         {
             "name": "Chongpeng Li",
-            "image": "./images/lichongpeng.jpg",
+            "image": "lichongpeng.jpg",
             "degree": "Master",
             "grade": 2020,
             "placement": null
         },
         {
             "name": "Yongqiang Yang",
-            "image": "./images/yangyongqiang.jpg",
+            "image": "yangyongqiang.jpg",
             "degree": "Master",
             "grade": 2020,
             "placement": null
         },
         {
             "name": "Haoqian He",
-            "image": "./images/hehaoqian.jpg",
+            "image": "hehaoqian.jpg",
             "degree": "Master",
             "grade": 2020,
             "placement": null
         },
         {
             "name": "Jingyue Wang",
-            "image": "./images/wangjingyue.jpg",
+            "image": "wangjingyue.jpg",
             "degree": "Master",
             "grade": 2020,
             "direction": "SE4AI",
