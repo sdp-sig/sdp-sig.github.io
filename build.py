@@ -14,7 +14,7 @@ def read_file(filename):
 
 
 def write_file(filename, content):
-    with open(filename, 'w') as file:
+    with open(filename, 'w', encoding='utf-8') as file:
         file.write(content)
 
 
@@ -74,7 +74,7 @@ def build_student(name, image: str | None, degree, grade, direction, placement):
               <p class=\"header\">NAME</p>\n \
               <p class=\"b\">DEGREE GRADE</p>\n"
     image = f"./images/avatars/{image or 'cat.webp'}"
-    
+
     student_content = student_content.replace("NAME", name).replace("IMG", image)\
                                      .replace("DEGREE", degree)
     if grade != "None":
