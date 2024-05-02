@@ -1,0 +1,87 @@
+[
+    {
+        "date": "Mar, 2024",
+        "event": "Our papers \"API Misuse Detection via Probabilistic Graphical Model\" and \"Model-less Is The Best Model: Generating Pure Code Implementations to Replace On-device DL Models\" have been accepted by ISSTA 2024 research paper track.",
+        "field": "SE"
+    },
+    {
+        "date": "Mar, 2024",
+        "event": "Our SANER'24 paper \"Investigating and Detecting Silent Bugs in PyTorch Programs\" won IEEE TCSE Distinguished Paper Award.",
+        "field": "SE"
+    },
+    {
+        "date": "Feb, 2024",
+        "event": "Our ICSE'24 paper \"Modularizing while Training: A New Paradigm for Modularizing DNN Models\" won ACM SIGSOFT Distinguished Paper Award.",
+        "field": "AI"
+    },
+    {
+        "date": "Jan, 2024",
+        "event": "our paper \"ProveNFix: Temporal Property guided Program Repair\" has been accepted by the FSE'24 research papers track.",
+        "field": "SE"
+    },
+    {
+        "date": "Dec, 2023",
+        "event": "our paper \"Investigating White-Box Attacks for On-Device Models\" has been accepted by the ICSE'24 research papers track.",
+        "field": "AI"
+    },
+    {
+        "date": "Nov, 2023",
+        "event": "our paper \"Reusing Convolutional Neural Network Models through Modularization and Composition\" has been accepted by TOSEM as research paper.",
+        "field": "AI"
+    },
+    {
+        "date": "Aug, 2023",
+        "event": "our paper \"Automated Fixing of Web UI Tests via Iterative Element Matching\" has been accepted by the ASE'23 research papers track.",
+        "field": "SE"
+    },
+    {
+        "date": "Jun, 2023",
+        "event": "our paper \"Modularizing while Training: A New Paradigm for Modularizing DNN Models\" has been accepted by the ICSE'24 research papers track.",
+        "field": "AI"
+    },
+    {
+        "date": "May, 2023",
+        "event": "our paper \"ModelObfuscator: Obfuscating Model Information to Protect Deployed ML-based Systems\" has been accepted by the ISSTA'23 technical papers track.",
+        "field": "AI"
+    },
+    {
+        "date": "Dec, 2022",
+        "event": "Binhang's paper Reusing Deep Neural Network Models through Model Re-engineering\" has been accepted by the ICSE'23 technical track.",
+        "field": "AI"
+    },
+    {
+        "date": "Dec, 2022",
+        "event": "our paper \"Template-based Neural Program Repair\" has been accepted by the ICSE'23 technical track.",
+        "field": "SE"
+    },
+    {
+        "date": "Dec, 2022",
+        "event": "our paper \"A Collaboration-Aware Approach to Profiling Developer Expertise with Cross-Community Data\" has been accepted by the QRS'22 regular papers track.",
+        "field": "SE"
+    },
+    {
+        "date": "Aug, 2022",
+        "event": "Binhang's paper Patching Weak Convolutional Neural Network Models through Modularization and Composition\" has been accepted by the ASE'22 research papers track.",
+        "field": "AI"
+    },
+    {
+        "date": "Jul, 2022",
+        "event": "Wang Jing has successfully defended her master thesis, and won Outstanding Graduates award of Beihang University. She is moving to Bank of China.",
+        "field": "SE"
+    },
+    {
+        "date": "Jun, 2022",
+        "event": "Yongqiang's work on developer portrait has beed accepted by Huawei OpenEuler Community.",
+        "field": "SE"
+    },
+    {
+        "date": "Apr, 2022",
+        "event": "our paper \"Program Vulnerability Repair via Inductive Inference\" has been accepted by the ISSTA'22 technical papers track.",
+        "field": "SE"
+    },
+    {
+        "date": "Dec, 2021",
+        "event": "our paper \"Improving Fault Localization and Program Repair with Deep Semantic Features and Transferred Knowledge.\" has been accepted by the ICSE'22 technical papers track.",
+        "field": "SE"
+    }
+]

@@ -1,7 +1,6 @@
 import json
 
-index_template_file="template/index.html"
-paper_data="data/papers"
+TOP_N_NEWS = 10
 
 def generate_html(content, tag, replacement):
     return content.replace("<!--" + tag + "-->", replacement)
@@ -37,17 +36,18 @@ def build_paper(title, author, conference, year, pdf, tool, video, ppt, award):
     return paper_content
     
 
-def build_selected_paper_list():
+def build_paper_list(filter=None):
     with open('data/paper.json') as json_file:
         papers = json.load(json_file)
     paper_list_content="<h3><strong>Selected Research Papers</strong></h3>\n\
         <ul class=\"\">\n"
     for paper in papers:
-        if(paper["is_selected"]):
-            paper_content = build_paper(paper["title"], ", ".join(paper["authors"]), \
-                                        paper["conference"], str(paper["year"]), \
-                                        paper["pdf"], paper["tool"], paper["video"], paper["ppt"], paper["award"])
-            paper_list_content = paper_list_content + paper_content
+        if filter!=None and not filter(paper):
+            continue
+        paper_content = build_paper(paper["title"], ", ".join(paper["authors"]), \
+                                    paper["conference"], str(paper["year"]), \
+                                    paper["pdf"], paper["tool"], paper["video"], paper["ppt"], paper["award"])
+        paper_list_content = paper_list_content + paper_content
     paper_list_content = paper_list_content + "        </ul>"
     return paper_list_content
         
@@ -102,23 +102,67 @@ def build_former_student_list(filter=None):
 
     return student_list_content
 
-def ssc_master_filter(student):
-    return student["group"]=="SE" and student["degree"]=="Master"
+# Build news
+def build_news_list(filter=None):
+    with open('data/news.json') as json_file:
+        news_list = json.load(json_file)
+    news_content_template = "              <li><strong>TIME</strong> NEWS_CONTENT</li>\n"
+    news_list_content = "            <ul>"
+    count = 0
+    for news in news_list:
+        if filter!=None and not filter(news):
+            continue
+        count += 1
+        if count > 10:
+            break
+        news_content = news_content_template.replace("TIME", news["date"]).replace("NEWS_CONTENT", news["event"])
+        news_list_content += news_content
+    news_list_content += "            </ul>"
+    return news_list_content
 
-def ssc_phd_filter(student):
-    return student["group"]=="SE" and student["degree"]=="Ph.D."
 
-index_template_content = read_file(index_template_file)
-paper_content = build_selected_paper_list()
-content = generate_html(index_template_content, "PAPER-LIST", paper_content)
-# student_content = build_student_list()
-# student_content += build_former_student_list()
-# content = generate_html(content, "STUDENT-LIST", student_content)
-write_file("index.html", content)
+def build_index():
+    def is_selected_paper_filter(paper):
+        return paper["is_selected"]==True
 
-ssc_content = read_file("template/ssc.html")
-ssc_phd_content = build_student_list(ssc_phd_filter)
-ssc_content = generate_html(ssc_content, "PHD_STUDENT_AI4SE", ssc_phd_content)
-ssc_master_content = build_student_list(ssc_master_filter)
-ssc_content = generate_html(ssc_content, "MASTER_STUDENT_AI4SE", ssc_master_content)
-write_file("ssc.html", ssc_content)
+    index_template_content = read_file("template/index.html")
+    paper_content = build_paper_list(is_selected_paper_filter)
+    content = generate_html(index_template_content, "PAPER-LIST", paper_content)
+    # student_content = build_student_list()
+    # student_content += build_former_student_list()
+    # content = generate_html(content, "STUDENT-LIST", student_content)
+    ssc_news = build_news_list()
+    content = generate_html(content, "NEWS-LIST", ssc_news)
+    write_file("index.html", content)
+    print("Build index page done!")
+
+
+# Build ssc webpage
+def build_ssc_page():
+    def ssc_master_filter(student):
+        return student["group"]=="SE" and student["degree"]=="Master"
+
+    def ssc_phd_filter(student):
+        return student["group"]=="SE" and student["degree"]=="Ph.D."
+
+    def ssc_paper_filter(paper):
+        return paper["field"]=="AI4SE"
+    
+    def ssc_news_filter(news):
+        return news["field"]=="SE"
+
+    ssc_content = read_file("template/ssc.html")
+    ssc_phd_content = build_student_list(ssc_phd_filter)
+    ssc_content = generate_html(ssc_content, "PHD_STUDENT_AI4SE", ssc_phd_content)
+    ssc_master_content = build_student_list(ssc_master_filter)
+    ssc_content = generate_html(ssc_content, "MASTER_STUDENT_AI4SE", ssc_master_content)
+    paper_content = build_paper_list(ssc_paper_filter)
+    ssc_content = generate_html(ssc_content, "PAPER-LIST", paper_content)
+    ssc_news = build_news_list(ssc_news_filter)
+    ssc_content = generate_html(ssc_content, "NEWS-LIST", ssc_news)
+    
+    write_file("ssc.html", ssc_content)
+    print("Build SSC page done!")
+
+build_index()
+build_ssc_page()

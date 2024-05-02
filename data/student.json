@@ -1,11 +1,110 @@
 {
     "students": [
         {
+            "name": "Chenfan Li",
+            "image": "./images/cat.webp",
+            "degree": "Ph.D.",
+            "grade": 2024,
+            "direction": "TBD",
+            "placement": null,
+            "group": "SE"
+        },
+        {
+            "name": "Yifan An",
+            "image": "./images/cat.webp",
+            "degree": "Master",
+            "grade": 2024,
+            "direction": "TBD",
+            "placement": null,
+            "group": "SE"
+        },
+        {
+            "name": "Xingyu Liu",
+            "image": "./images/cat.webp",
+            "degree": "Master",
+            "grade": 2024,
+            "direction": "TBD",
+            "placement": null,
+            "group": "SE"
+        },
+        {
+            "name": "Rui He",
+            "image": "./images/cat.webp",
+            "degree": "Master",
+            "grade": 2024,
+            "direction": "TBD",
+            "placement": null,
+            "group": "SE"
+        },
+        {
+            "name": "Chang Liu",
+            "image": "./images/cat.webp",
+            "degree": "Master",
+            "grade": 2024,
+            "direction": "TBD",
+            "placement": null,
+            "group": "SE"
+        },
+        {
+            "name": "Xingjing Deng",
+            "image": "./images/cat.webp",
+            "degree": "Master",
+            "grade": 2024,
+            "direction": "Static program analysis",
+            "placement": null,
+            "group": "SE"
+        },
+        {
             "name": "Zhe Zhang",
             "image": "./images/zhangzhe.jpg",
             "degree": "Master",
             "grade": 2023,
             "direction": "Fuzzing",
+            "placement": null,
+            "group": "SE"
+        },
+        {
+            "name": "Bowen Xu",
+            "image": "./images/cat.webp",
+            "degree": "Master",
+            "grade": 2023,
+            "direction": "LLM for vulnerability analysis",
+            "placement": null,
+            "group": "SE"
+        },
+        {
+            "name": "Hao Gao",
+            "image": "./images/cat.webp",
+            "degree": "Master",
+            "grade": 2023,
+            "direction": "LLM for code generation",
+            "placement": null,
+            "group": "SE"
+        },
+        {
+            "name": "Yi Xu",
+            "image": "./images/cat.webp",
+            "degree": "Master",
+            "grade": 2023,
+            "direction": "Software Supply Chain",
+            "placement": null,
+            "group": "SE"
+        },
+        {
+            "name": "Yu Guo ",
+            "image": "./images/cat.webp",
+            "degree": "Master",
+            "grade": 2023,
+            "direction": "Software Supply Chain",
+            "placement": null,
+            "group": "SE"
+        },
+        {
+            "name": "Zuozhou Zhang",
+            "image": "./images/cat.webp",
+            "degree": "Master",
+            "grade": 2023,
+            "direction": "Software Supply Chain",
             "placement": null,
             "group": "SE"
         },
@@ -23,7 +122,7 @@
             "image": "./images/yangyixin.jpg",
             "degree": "Ph.D.",
             "grade": 2023,
-            "direction": "AI4SE",
+            "direction": "Vulnerability detection",
             "placement": null,
             "group": "SE"
         },
@@ -77,7 +176,7 @@
             "image": "./images/chenliyou.jpg",
             "degree": "Ph.D.",
             "grade": 2022,
-            "direction": "Software Supply Chain",
+            "direction": "Vulnerability recognization",
             "placement": null,
             "group": "SE"
         },
@@ -131,7 +230,7 @@
             "image": "./images/tianwentong.jpg",
             "degree": "Ph.D.",
             "grade": 2022,
-            "direction": "Software Supply Chain",
+            "direction": "LLM for vulnerability analysis",
             "placement": null,
             "group": "SE"
         },
@@ -140,7 +239,7 @@
             "image": "./images/mayunlong.jpg",
             "degree": "Ph.D.",
             "grade": 2022,
-            "direction": "Software Supply Chain",
+            "direction": "Combining static analysis with LLM",
             "placement": null,
             "group": "SE"
         },
@@ -167,7 +266,7 @@
             "image": "./images/hongshuo.jpg",
             "degree": "Master",
             "grade": 2022,
-            "direction": "SE4AI",
+            "direction": "Static program analysis",
             "placement": null,
             "group": "SE"
         },

@@ -1,132 +1,464 @@
 [
-  {
-      "title": "Reusing Deep Neural Network Models through Model Re-engineering",
-      "authors": ["Binhang Qi", "Hailong Sun", "Xiang Gao", "Hongyu Zhang", "Zhaotian Li", "Xudong Liu"],
-      "conference": "The 45th International Conference on Software Engineering (ICSE)",
-      "year": 2023,
-      "pdf": null,
-      "ppt": null,
-      "tool": null,
-      "video": null,
-      "award": null,
-      "is_selected": true,
-      "field": "SE4AI"
-  },
-  {
-      "title": "Template-based Neural Program Repair",
-      "authors": ["Xiangxin Meng", "Xu Wang", "Hongyu Zhang", "Hailong Sun", "Xudong Liu", "Chunming Hu"],
-      "conference": "The 45th International Conference on Software Engineering (ICSE)",
-      "year": 2023,
-      "pdf": null,
-      "ppt": null,
-      "tool": null,
-      "video": null,
-      "award": null,
-      "is_selected": true,
-      "field": "AI4SE"
-  },
-  {
-      "title": "A Collaboration-Aware Approach to Profiling Developer Expertise with Cross-Community Data",
-      "authors": ["Xiaotao Song", "Jiafei Yan", "Yuexin Huang", "Hailong Sun", "Hongyu Zhang"],
-      "conference": "The 22nd IEEE International Conference on Software Quality, Reliability, and Security (QRS)",
-      "year": 2022,
-      "pdf": null,
-      "ppt": null,
-      "tool": null,
-      "video": null,
-      "award": null,
-      "is_selected": true,
-      "field": "AI4SE"
-  },
-  {
-      "title": "Patching Weak Convolutional Neural Network Models through Modularization and Composition",
-      "authors": ["Binhang Qi", "Hailong Sun", "Xiang Gao", "Hongyu Zhang"],
-      "conference": "IEEE/ACM International Conference on Automated Software Engineering (ASE)",
-      "year": 2022,
-      "pdf": "https://gaoxiang9430.github.io/papers/CNNSplitter.pdf",
-      "ppt": null,
-      "tool": null,
-      "video": null,
-      "award": null,
-      "is_selected": true,
-      "field": "AI4SE"
-  },
-  {
-      "title": "Program Vulnerability Repair via Inductive Inference",
-      "authors": ["Yuntong Zhang", "Xiang Gao", "Gregory J. Duck", "Abhik Roychoudhury"],
-      "conference": "ACM International Symposium on Software Testing and Analysis (ISSTA)",
-      "year": 2022,
-      "pdf": "./papers/VulnFix.pdf",
-      "ppt": null,
-      "tool": null,
-      "video": null,
-      "award": null,
-      "is_selected": true,
-      "field": "AI4SE"
-  },
-  {
-      "title": "Improving Fault Localization and Program Repair with Deep Semantic Features and Transferred Knowledge",
-      "authors": ["Xiangxin Meng", "Xu Wang", "Hongyu Zhang", "Hailong Sun", "Xudong Liu"],
-      "conference": "The 44th International Conference on Software Engineering (ICSE)",
-      "year": 2022,
-      "pdf": null,
-      "ppt": null,
-      "tool": null,
-      "video": null,
-      "award": null,
-      "is_selected": true,
-      "field": "AI4SE"
-  },
-  {
-      "title": "APIfix: Output-Oriented Program Synthesis for Combating Breaking Changes in Libraries",
-      "authors": ["Xiang Gao", "Arjun Radhakrishna", "Gustavo Soares", "Ridwan Shariffdeen", "Sumit Gulwani", "Abhik Roychoudhury"],
-      "conference": "Object-Oriented Programming, Systems, Languages, and Applications (OOPSLA)",
-      "year": 2021,
-      "pdf": "./papers/APIFix.pdf",
-      "ppt": null,
-      "tool": null,
-      "video": null,
-      "award": null,
-      "is_selected": true,
-      "field": "AI4SE"
-  },
-  {
-      "title": "Automated Patch Backporting in Linux (Experience Paper)",
-      "authors": ["Ridwan Shariffdeen", "Xiang Gao", "Gregory J. Duck", "Shin Hwei Tan", "Julia Lawall", "Abhik Roychoudhury"],
-      "conference": "International Symposium on Software Testing and Analysis (ISSTA)",
-      "year": 2021,
-      "pdf": "./papers/FixMorph.pdf",
-      "ppt": null,
-      "tool": null,
-      "video": "https://www.youtube.com/watch?v=NUNdEJnbTI0",
-      "award": "Distinguished Artifact Award",
-      "is_selected": true,
-      "field": "AI4SE"
-  },
-  {
-      "title": "Learning to Handle Exceptions",
-      "authors": ["Jian Zhang", "Xu Wang", "Hongyu Zhang", "Hailong Sun", "Yanjun Pu", "Xudong Liu"],
-      "conference": "The 35th IEEE/ACM International Conference on Automated Software Engineering (ASE)",
-      "year": 2020,
-      "pdf": null,
-      "ppt": null,
-      "tool": null,
-      "video": null,
-      "award": null,
-      "is_selected": true,
-      "field": "AI4SE"
-  },
-  {
-      "title": "Retrieval-based Neural Source Code Summarization",
-      "authors": ["Jian Zhang", "Xu Wang", "Hongyu Zhang", "Hailong Sun", "Xudong Liu"],
-      "conference": "The 42nd International Conference on Software Engineering (ICSE)",
-      "year": 2020,
-      "pdf": null,
-      "ppt": null,
-      "tool": null,
-      "video": null,
-      "award": null,
-      "is_selected": true,
-      "field": "AI4SE"
-  }
+    {
+        "title": "ModelFoundry: A Tool for DNN Modularization and On-demand Model Reuse",
+        "authors": [
+            "Xiaohan Bi",
+            "Ruobing Zhao",
+            "Binhang Qi",
+            "Hailong Sun",
+            "Xiang Gao",
+            "Yue Yu",
+            "Xiaojun Liang"
+        ],
+        "conference": "The ACM International Conference on the Foundations of Software Engineering (FSE) - Demonstration track",
+        "year": 2024,
+        "pdf": null,
+        "ppt": null,
+        "tool": null,
+        "video": null,
+        "award": null,
+        "is_selected": false,
+        "field": "SE4AI"
+    },
+    {
+        "title": "ModelGalaxy: A Versatile Model Retrieval Platform",
+        "authors": [
+            "Wenling Zhang",
+            "Yixiao Li",
+            "Zhaotian Li",
+            "Hailong Sun",
+            "Xiang Gao",
+            "Xudong Liu"
+        ],
+        "conference": "The 47th International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR) - Demonstration track",
+        "year": 2024,
+        "pdf": null,
+        "ppt": null,
+        "tool": null,
+        "video": null,
+        "award": null,
+        "is_selected": false,
+        "field": "SE4AI"
+    },
+    {
+        "title": "API Misuse Detection via Probabilistic Graphical Model",
+        "authors": [
+            "Yunlong Ma",
+            "Wentong Tian",
+            "Xiang Gao",
+            "Hailong Sun",
+            "Li Li"
+        ],
+        "conference": "International Symposium on Software Testing and Analysis (ISSTA)",
+        "year": 2024,
+        "pdf": null,
+        "ppt": null,
+        "tool": null,
+        "video": null,
+        "award": null,
+        "is_selected": true,
+        "field": "AI4SE"
+    },
+    {
+        "title": "Model-less Is The Best Model: Generating Pure Code Implementations to Replace On-device DL Models",
+        "authors": [
+            "Mingyi Zhou",
+            "Xiang Gao",
+            "Pei Liu",
+            "John Grundy",
+            "Chunyang Chen",
+            "Xiao Chen",
+            "Li Li"
+        ],
+        "conference": "International Symposium on Software Testing and Analysis (ISSTA)",
+        "year": 2024,
+        "pdf": null,
+        "ppt": null,
+        "tool": null,
+        "video": null,
+        "award": null,
+        "is_selected": false,
+        "field": "SE4AI"
+    },
+    {
+        "title": "ProveNFix: Temporal Property guided Program Repair",
+        "authors": [
+            "Yahui Song",
+            "Xiang Gao",
+            "Wenhua Li",
+            "Wei Ngan Chin",
+            "Abhik Roychoudhury"
+        ],
+        "conference": "International Conference on the Foundations of Software Engineering (FSE)",
+        "year": 2024,
+        "pdf": "http://gaoxiang9430.github.io/papers/fse24.pdf",
+        "ppt": null,
+        "tool": null,
+        "video": null,
+        "award": null,
+        "is_selected": false,
+        "field": "AI4SE"
+    },
+    {
+        "title": "Modularizing while Training: A New Paradigm for Modularizing DNN Models",
+        "authors": [
+            "Binhang Qi",
+            "Hailong Sun",
+            "Hongyu Zhang",
+            "Ruobing Zhao",
+            "Xiang Gao"
+        ],
+        "conference": "International Conference on Software Engineering (ICSE)",
+        "year": 2024,
+        "pdf": "http://gaoxiang9430.github.io/papers/icse24a.pdf",
+        "ppt": null,
+        "tool": null,
+        "video": null,
+        "award": "ACM SIGSOFT Distinguished Paper Award",
+        "is_selected": true,
+        "field": "SE4AI"
+    },
+    {
+        "title": "Investigating White-Box Attacks for On-Device Models",
+        "authors": [
+            "Mingyi Zhou",
+            "Xiang Gao",
+            "Jing Wu",
+            "Kui Liu",
+            "Hailong Sun",
+            "Li Li"
+        ],
+        "conference": "International Conference on Software Engineering (ICSE)",
+        "year": 2024,
+        "pdf": "http://arxiv.org/abs/2306.09376",
+        "ppt": null,
+        "tool": null,
+        "video": null,
+        "award": null,
+        "is_selected": false,
+        "field": "SE4AI"
+    },
+    {
+        "title": "Investigating and Detecting Silent Bugs in PyTorch Programs",
+        "authors": [
+            "Shuo Hong",
+            "Hailong Sun",
+            "Xiang Gao#",
+            "Shin Hwei Tan"
+        ],
+        "conference": "International Conference on Software Analysis, Evolution and Reengineering (SANER)",
+        "year": 2024,
+        "pdf": "http://gaoxiang9430.github.io/papers/saner24a.pdf",
+        "ppt": null,
+        "tool": null,
+        "video": null,
+        "award": "IEEE TCSE Distinguished Paper Award",
+        "is_selected": true,
+        "field": "AI4SE"
+    },
+    {
+        "title": "Reducing False Positives of Static Bug Detectors through Code Representation Learning",
+        "authors": [
+            "Yixin Yang",
+            "Ming Wen",
+            "Xiang Gao",
+            "Yuting Zhang",
+            "Hailong Sun"
+        ],
+        "conference": "International Conference on Software Analysis, Evolution and Reengineering (SANER)",
+        "year": 2024,
+        "pdf": "http://gaoxiang9430.github.io/papers/saner24b.pdf",
+        "ppt": null,
+        "tool": null,
+        "video": null,
+        "award": null,
+        "is_selected": false,
+        "field": "AI4SE"
+    },
+    {
+        "title": "Reusing Convolutional Neural Network Models through Modularization and Composition",
+        "authors": [
+            "Binhang Qi",
+            "Hailong Sun",
+            "Hongyu Zhang",
+            "Xiang Gao"
+        ],
+        "conference": "ACM Transactions on Software Engineering and Methodology (TOSEM)",
+        "year": 2023,
+        "pdf": "http://gaoxiang9430.github.io/papers/Tosem23.pdf",
+        "ppt": null,
+        "tool": "https://github.com/qibinhang/GradSplitter",
+        "video": null,
+        "award": null,
+        "is_selected": false,
+        "field": "SE4AI"
+    },
+    {
+        "title": "Automated Fixing of Web UI Tests via Iterative Element Matching",
+        "authors": [
+            "Yuanzhang Lin",
+            "Guoyao Wen",
+            "Xiang Gao"
+        ],
+        "conference": "International Conference on Automated Software Engineering (ASE) 2023",
+        "year": 2023,
+        "pdf": "http://gaoxiang9430.github.io/papers/ASE23_UITESTFIX.pdf",
+        "ppt": null,
+        "tool": "https://anonymous.4open.science/r/Web-UI-Dataset-9645",
+        "video": null,
+        "award": null,
+        "is_selected": false,
+        "field": "AI4SE"
+    },
+    {
+        "title": "ModelObfuscator: Obfuscating Model Information to Protect Deployed ML-based Systems",
+        "authors": [
+            "Mingyi Zhou",
+            "Xiang Gao",
+            "Jing Wu",
+            "John Grundy",
+            "Xiao Chen",
+            "Chunyang Chen",
+            "Li Li"
+        ],
+        "conference": "International Symposium on Software Testing and Analysis (ISSTA) 2023",
+        "year": 2023,
+        "pdf": "http://gaoxiang9430.github.io/papers/issta2023.pdf",
+        "ppt": null,
+        "tool": "https://github.com/zhoumingyi/ModelObfuscator",
+        "video": null,
+        "award": null,
+        "is_selected": false,
+        "field": "SE4AI"
+    },
+    {
+        "title": "Automated Repair of Programs from Large Language Models",
+        "authors": [
+            "Zhiyu Fan",
+            "Xiang Gao#",
+            "Martin Mirchev",
+            "Abhik Roychoudhury",
+            "Shin Hwei Tan"
+        ],
+        "conference": "International Conference on Software Engineering (ICSE) 2023",
+        "year": 2023,
+        "pdf": "http://gaoxiang9430.github.io/papers/icse23a.pdf",
+        "ppt": null,
+        "tool": "https://github.com/zhiyufan/apr4codex",
+        "video": null,
+        "award": null,
+        "is_selected": true,
+        "field": "AI4SE"
+    },
+    {
+        "title": "Reusing Deep Neural Network Models through Model Re-engineering",
+        "authors": [
+            "Binhang Qi",
+            "Hailong Sun",
+            "Xiang Gao",
+            "Hongyu Zhang",
+            "Zhaotian Li",
+            "Xudong Liu"
+        ],
+        "conference": "The 45th International Conference on Software Engineering (ICSE)",
+        "year": 2023,
+        "pdf": "http://gaoxiang9430.github.io/papers/icse23b.pdf",
+        "ppt": null,
+        "tool": "https://github.com/qibinhang/SeaM",
+        "video": null,
+        "award": null,
+        "is_selected": true,
+        "field": "SE4AI"
+    },
+    {
+        "title": "Template-based Neural Program Repair",
+        "authors": [
+            "Xiangxin Meng",
+            "Xu Wang",
+            "Hongyu Zhang",
+            "Hailong Sun",
+            "Xudong Liu",
+            "Chunming Hu"
+        ],
+        "conference": "The 45th International Conference on Software Engineering (ICSE)",
+        "year": 2023,
+        "pdf": null,
+        "ppt": null,
+        "tool": null,
+        "video": null,
+        "award": null,
+        "is_selected": true,
+        "field": "AI4SE"
+    },
+    {
+        "title": "Trust Enhancement Issues in Program Repair",
+        "authors": [
+            "Yannic Noller",
+            "Ridwan Shariffdeen",
+            "Xiang Gao",
+            "Abhik Roychoudhury"
+        ],
+        "conference": "International Conference on Software Engineering (ICSE)",
+        "year": 2022,
+        "pdf": null,
+        "ppt": null,
+        "tool": null,
+        "video": null,
+        "award": null,
+        "is_selected": false,
+        "field": "SE4AI"
+    },
+    {
+        "title": "A Collaboration-Aware Approach to Profiling Developer Expertise with Cross-Community Data",
+        "authors": [
+            "Xiaotao Song",
+            "Jiafei Yan",
+            "Yuexin Huang",
+            "Hailong Sun",
+            "Hongyu Zhang"
+        ],
+        "conference": "The 22nd IEEE International Conference on Software Quality, Reliability, and Security (QRS)",
+        "year": 2022,
+        "pdf": null,
+        "ppt": null,
+        "tool": null,
+        "video": null,
+        "award": null,
+        "is_selected": true,
+        "field": "AI4SE"
+    },
+    {
+        "title": "Patching Weak Convolutional Neural Network Models through Modularization and Composition",
+        "authors": [
+            "Binhang Qi",
+            "Hailong Sun",
+            "Xiang Gao",
+            "Hongyu Zhang"
+        ],
+        "conference": "IEEE/ACM International Conference on Automated Software Engineering (ASE)",
+        "year": 2022,
+        "pdf": "https://gaoxiang9430.github.io/papers/CNNSplitter.pdf",
+        "ppt": null,
+        "tool": null,
+        "video": null,
+        "award": null,
+        "is_selected": false,
+        "field": "AI4SE"
+    },
+    {
+        "title": "Program Vulnerability Repair via Inductive Inference",
+        "authors": [
+            "Yuntong Zhang",
+            "Xiang Gao",
+            "Gregory J. Duck",
+            "Abhik Roychoudhury"
+        ],
+        "conference": "ACM International Symposium on Software Testing and Analysis (ISSTA)",
+        "year": 2022,
+        "pdf": "./papers/VulnFix.pdf",
+        "ppt": null,
+        "tool": null,
+        "video": null,
+        "award": null,
+        "is_selected": false,
+        "field": "AI4SE"
+    },
+    {
+        "title": "Improving Fault Localization and Program Repair with Deep Semantic Features and Transferred Knowledge",
+        "authors": [
+            "Xiangxin Meng",
+            "Xu Wang",
+            "Hongyu Zhang",
+            "Hailong Sun",
+            "Xudong Liu"
+        ],
+        "conference": "The 44th International Conference on Software Engineering (ICSE)",
+        "year": 2022,
+        "pdf": null,
+        "ppt": null,
+        "tool": null,
+        "video": null,
+        "award": null,
+        "is_selected": true,
+        "field": "AI4SE"
+    },
+    {
+        "title": "APIfix: Output-Oriented Program Synthesis for Combating Breaking Changes in Libraries",
+        "authors": [
+            "Xiang Gao",
+            "Arjun Radhakrishna",
+            "Gustavo Soares",
+            "Ridwan Shariffdeen",
+            "Sumit Gulwani",
+            "Abhik Roychoudhury"
+        ],
+        "conference": "Object-Oriented Programming, Systems, Languages, and Applications (OOPSLA)",
+        "year": 2021,
+        "pdf": "./papers/APIFix.pdf",
+        "ppt": null,
+        "tool": null,
+        "video": null,
+        "award": null,
+        "is_selected": false,
+        "field": "AI4SE"
+    },
+    {
+        "title": "Automated Patch Backporting in Linux (Experience Paper)",
+        "authors": [
+            "Ridwan Shariffdeen",
+            "Xiang Gao",
+            "Gregory J. Duck",
+            "Shin Hwei Tan",
+            "Julia Lawall",
+            "Abhik Roychoudhury"
+        ],
+        "conference": "International Symposium on Software Testing and Analysis (ISSTA)",
+        "year": 2021,
+        "pdf": "./papers/FixMorph.pdf",
+        "ppt": null,
+        "tool": null,
+        "video": "https://www.youtube.com/watch?v=NUNdEJnbTI0",
+        "award": "Distinguished Artifact Award",
+        "is_selected": false,
+        "field": "AI4SE"
+    },
+    {
+        "title": "Learning to Handle Exceptions",
+        "authors": [
+            "Jian Zhang",
+            "Xu Wang",
+            "Hongyu Zhang",
+            "Hailong Sun",
+            "Yanjun Pu",
+            "Xudong Liu"
+        ],
+        "conference": "The 35th IEEE/ACM International Conference on Automated Software Engineering (ASE)",
+        "year": 2020,
+        "pdf": null,
+        "ppt": null,
+        "tool": null,
+        "video": null,
+        "award": null,
+        "is_selected": false,
+        "field": "AI4SE"
+    },
+    {
+        "title": "Retrieval-based Neural Source Code Summarization",
+        "authors": [
+            "Jian Zhang",
+            "Xu Wang",
+            "Hongyu Zhang",
+            "Hailong Sun",
+            "Xudong Liu"
+        ],
+        "conference": "The 42nd International Conference on Software Engineering (ICSE)",
+        "year": 2020,
+        "pdf": null,
+        "ppt": null,
+        "tool": null,
+        "video": null,
+        "award": null,
+        "is_selected": true,
+        "field": "AI4SE"
+    }
 ]

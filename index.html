@@ -19,22 +19,13 @@
 
   <script src="jquery.js"></script>
   <script>
-      $(function(){
+    $(function () {
       $("#includedContent").load("./news.html");
     });
   </script>
-  <script>
-    // Fetch content from another HTML file
-    fetch('student.html')
-        .then(response => response.text())
-        .then(html => {
-            // Insert the fetched content into the specified div
-            document.getElementById('imported-content').innerHTML = html;
-        })
-        .catch(error => console.error('Error fetching content:', error));
-</script>
 
-  <div class="intro" style="background-image: url(./images/bg.jpeg);background-repeat: no-repeat; background-size: cover;" id="home">
+  <div class="intro"
+    style="background-image: url(./images/bg.jpeg);background-repeat: no-repeat; background-size: cover;" id="home">
     <nav class="navbar navbar-default navbar-fixed-top navbar-collapse">
       <div class="container-fluid head-padding">
         <div class="navbar-header">
@@ -56,8 +47,8 @@
                 <!-- <a href="#news" title="news" style="color:white">NEWS</a> -->
                 <button class="dropbtn" onclick="location.href='#research'">RESEARCH</button>
                 <div class="dropdown-content">
-                  <a href="./ssc.html">AI4SE</a>
-                  <a href="#def">DEF</a>
+                  <a href="./ssc.html">SE</a>
+                  <a href="./ai.hmtl">AI</a>
                   <!-- <a href="#ghi">GHI</a> -->
                 </div>
               </div>
@@ -84,33 +75,47 @@
   <div class="page">
     <div class="jumbotron jumbotron-fluid" id="news">
       <div class="container">
-          <h2><center>Recent Updates</center></h2><hr>
-        <ul>
-            <li><strong>Dec, 2022</strong> Binhang's paper <a href="">Reusing Deep Neural Network Models through Model Re-engineering</a> has been accepted by the <a href="https://conf.researchr.org/track/icse-2023/icse-2023-technical-track">ICSE'23</a> technical track.</li>
-            <li><strong>Dec, 2022</strong> Our paper <a href="">Template-based Neural Program Repair</a> has been accepted by the <a href="https://conf.researchr.org/track/icse-2023/icse-2023-technical-track">ICSE'23</a> technical track.</li>
-            <li><strong>Dec, 2022</strong> Our paper <a href="">A Collaboration-Aware Approach to Profiling Developer Expertise with Cross-Community Data</a> has been accepted by the <a href="https://qrs22.techconf.org/track/regular">QRS'22</a> regular papers track.</li>
-            <li><strong>Aug, 2022</strong> Binhang's paper <a href="https://gaoxiang9430.github.io/papers/CNNSplitter.pdf">Patching Weak Convolutional Neural Network Models through Modularization and Composition</a> has been accepted by the <a href="https://conf.researchr.org/home/ase-2022">ASE'22</a> research papers track.</li>
-            <li><strong>Jul, 2022</strong> Wang Jing has successfully defended her master thesis, and won Outstanding Graduates award of Beihang University. She is moving to Bank of China.</li>
-            <li><strong>Jun, 2022</strong> Yongqiang's work on developer portrait has beed accepted by Huawei OpenEuler Community.</li>
-            <li><strong>Apr, 2022</strong> Our paper <a href="https://gaoxiang9430.github.io/papers/VulnFix.pdf">Program Vulnerability Repair via Inductive Inference</a> has been accepted by the <a href="https://conf.researchr.org/track/issta-2022/issta-2022-technical-papers">ISSTA'22</a> technical papers track.</li>
-            <li><strong>Dec, 2021</strong> Our paper <a href="">Improving Fault Localization and Program Repair with Deep Semantic Features and Transferred Knowledge.</a> has been accepted by the <a href="https://conf.researchr.org/track/icse-2022/icse-2022-technical-papers">ICSE'22</a> technical papers track.</li>
-        </ul>
+        <h2>
+          <center>Recent Updates</center>
+        </h2>
+        <hr>
+                    <ul>              <li><strong>Mar, 2024</strong> Our papers "API Misuse Detection via Probabilistic Graphical Model" and "Model-less Is The Best Model: Generating Pure Code Implementations to Replace On-device DL Models" have been accepted by ISSTA 2024 research paper track.</li>
+              <li><strong>Mar, 2024</strong> Our SANER'24 paper "Investigating and Detecting Silent Bugs in PyTorch Programs" won IEEE TCSE Distinguished Paper Award.</li>
+              <li><strong>Feb, 2024</strong> Our ICSE'24 paper "Modularizing while Training: A New Paradigm for Modularizing DNN Models" won ACM SIGSOFT Distinguished Paper Award.</li>
+              <li><strong>Jan, 2024</strong> our paper "ProveNFix: Temporal Property guided Program Repair" has been accepted by the FSE'24 research papers track.</li>
+              <li><strong>Dec, 2023</strong> our paper "Investigating White-Box Attacks for On-Device Models" has been accepted by the ICSE'24 research papers track.</li>
+              <li><strong>Nov, 2023</strong> our paper "Reusing Convolutional Neural Network Models through Modularization and Composition" has been accepted by TOSEM as research paper.</li>
+              <li><strong>Aug, 2023</strong> our paper "Automated Fixing of Web UI Tests via Iterative Element Matching" has been accepted by the ASE'23 research papers track.</li>
+              <li><strong>Jun, 2023</strong> our paper "Modularizing while Training: A New Paradigm for Modularizing DNN Models" has been accepted by the ICSE'24 research papers track.</li>
+              <li><strong>May, 2023</strong> our paper "ModelObfuscator: Obfuscating Model Information to Protect Deployed ML-based Systems" has been accepted by the ISSTA'23 technical papers track.</li>
+              <li><strong>Dec, 2022</strong> Binhang's paper Reusing Deep Neural Network Models through Model Re-engineering" has been accepted by the ICSE'23 technical track.</li>
+            </ul>
       </div>
     </div>
 
     <div>
       <div class="container" id="research">
-          <h2><center>Research</center></h2><hr>
+        <h2>
+          <center>Research</center>
+        </h2>
+        <hr>
         <h3><strong>Research Directions</strong></h3>
         <div class="container-fluid">
           <div class="row">
             <div class="col-sm-6">
               <div class="panel panel-success">
-                    <div class="panel-heading"><h4><a href="./ssc.html">Software Supply Chain Security via AI4SE</a></h4></div>
+                <div class="panel-heading">
+                  <h4><a href="./ssc.html">Software Supply Chain Security via AI4SE</a></h4>
+                </div>
                 <div class="panel-body">
-                      <p>To improve software development efficiency and save cost, when developing software, many enterprises rely on third-party software, which constitutes the software supply chain (SSC).
-                        Due to the dependency relations among software, vulnerabilities in SSC may cause more serious security threats than independent software systems. This poses new challenges for ensuring software security.
-                        Our research mainly focuses on designing novel intelligent software engineering and program analysis techniques, including but not limited to software dependency analysis, software vulnerability detection, vulnerability repair and etc.
+                  <p>To improve software development efficiency and save cost, when developing software, many
+                    enterprises rely on third-party software, which constitutes the software supply chain (SSC).
+                    Due to the dependency relations among software, vulnerabilities in SSC may cause more serious
+                    security threats than independent software systems. This poses new challenges for ensuring software
+                    security.
+                    Our research mainly focuses on designing novel intelligent software engineering and program analysis
+                    techniques, including but not limited to software dependency analysis, software vulnerability
+                    detection, vulnerability repair and etc.
                     The ultimate goal is to increase the security of software supply chain and software ecosystem.
                   </p>
                   <p style="color: blue;"><a href="./ssc.html">read more ...</a></p>
@@ -127,20 +132,34 @@
                 </div>
               </div>-->
 
-              <div class="col-sm-6">
-                <div class="panel panel-warning">
-                  <div class="panel-heading"><h4>Usability and Robustness of DNN via SE4AI</h5></div>
-                  <div class="panel-body">
-                    <p>Due to poor interpretability, a large number of parameters and data requirements, and poor reliability, the AI model, as the core of intelligent software systems, suffers from poor reusability, high testing overhead, and high security risks in development, testing, and deployment. AI models are considered as "Software 2.0". In this direction, we target the above problems from the perspective of software engineering. we aim to apply software engineering techniques/notions to AI model engineering to improve the models' usability and robustness.</p>
-                  </div>
+            <div class="col-sm-6">
+              <div class="panel panel-warning">
+                <div class="panel-heading">
+                  <h4>Usability and Robustness of DNN via SE4AI</h5>
+                </div>
+                <div class="panel-body">
+                  <p>Due to poor interpretability, a large number of parameters and data requirements, and poor
+                    reliability, the AI model, as the core of intelligent software systems, suffers from poor
+                    reusability, high testing overhead, and high security risks in development, testing, and deployment.
+                    AI models are considered as "Software 2.0". In this direction, we target the above problems from the
+                    perspective of software engineering. we aim to apply software engineering techniques/notions to AI
+                    model engineering to improve the models' usability and robustness.</p>
                 </div>
               </div>
+            </div>
 
             <div class="col-sm-6">
               <div class="panel panel-default">
-                  <div class="panel-heading"><h4>AI/Crowd Intelligence</h5></div>
+                <div class="panel-heading">
+                  <h4>AI/Crowd Intelligence</h5>
+                </div>
                 <div class="panel-body">
-                    <p>Crowd intelligence aims at achieving powerful intelligence through aggregating diverse contributions from many heterogeneous individuals, which is a typical form of AI. As a matter of fact, the sucess of many AI tehcnologies highly relies on large-scale datasets that are often built through crowd intelligence. We study various perspectives of crowd intelligence including theories, techniques and applications. Research topics include, but are not limited to, crowdsourcing, federated learning, human-in-the-loop AI and open source.</p>
+                  <p>Crowd intelligence aims at achieving powerful intelligence through aggregating diverse
+                    contributions from many heterogeneous individuals, which is a typical form of AI. As a matter of
+                    fact, the sucess of many AI tehcnologies highly relies on large-scale datasets that are often built
+                    through crowd intelligence. We study various perspectives of crowd intelligence including theories,
+                    techniques and applications. Research topics include, but are not limited to, crowdsourcing,
+                    federated learning, human-in-the-loop AI and open source.</p>
                 </div>
               </div>
             </div>
@@ -150,7 +169,37 @@
         <h3><strong>Selected Research Papers</strong></h3>
         <ul class="">
           <li>
+            <h4 class=><strong>API Misuse Detection via Probabilistic Graphical Model</strong>
+            </h4>
+            Yunlong Ma, Wentong Tian, Xiang Gao, Hailong Sun, Li Li.
+          <p class="">International Symposium on Software Testing and Analysis (ISSTA), 2024.</p>
+          </li>
+          <li>
+            <h4 class=><strong>Modularizing while Training: A New Paradigm for Modularizing DNN Models</strong>
+            <a href="http://gaoxiang9430.github.io/papers/icse24a.pdf"> <img src="images/pdf.png" width="25" height="25"></a>
+            </h4>
+            Binhang Qi, Hailong Sun, Hongyu Zhang, Ruobing Zhao, Xiang Gao.
+          <p class="">International Conference on Software Engineering (ICSE), 2024.</p>
+          </li>
+            <p><span style="color:red">ACM SIGSOFT Distinguished Paper Award</span></p>          <li>
+            <h4 class=><strong>Investigating and Detecting Silent Bugs in PyTorch Programs</strong>
+            <a href="http://gaoxiang9430.github.io/papers/saner24a.pdf"> <img src="images/pdf.png" width="25" height="25"></a>
+            </h4>
+            Shuo Hong, Hailong Sun, Xiang Gao#, Shin Hwei Tan.
+          <p class="">International Conference on Software Analysis, Evolution and Reengineering (SANER), 2024.</p>
+          </li>
+            <p><span style="color:red">IEEE TCSE Distinguished Paper Award</span></p>          <li>
+            <h4 class=><strong>Automated Repair of Programs from Large Language Models</strong>
+            <a href="http://gaoxiang9430.github.io/papers/icse23a.pdf"> <img src="images/pdf.png" width="25" height="25"></a>
+            <a href="https://github.com/zhiyufan/apr4codex"> <img src="images/github.png" width="25" height="25"></a>
+            </h4>
+            Zhiyu Fan, Xiang Gao#, Martin Mirchev, Abhik Roychoudhury, Shin Hwei Tan.
+          <p class="">International Conference on Software Engineering (ICSE) 2023, 2023.</p>
+          </li>
+          <li>
             <h4 class=><strong>Reusing Deep Neural Network Models through Model Re-engineering</strong>
+            <a href="http://gaoxiang9430.github.io/papers/icse23b.pdf"> <img src="images/pdf.png" width="25" height="25"></a>
+            <a href="https://github.com/qibinhang/SeaM"> <img src="images/github.png" width="25" height="25"></a>
             </h4>
             Binhang Qi, Hailong Sun, Xiang Gao, Hongyu Zhang, Zhaotian Li, Xudong Liu.
           <p class="">The 45th International Conference on Software Engineering (ICSE), 2023.</p>
@@ -168,45 +217,10 @@
           <p class="">The 22nd IEEE International Conference on Software Quality, Reliability, and Security (QRS), 2022.</p>
           </li>
           <li>
-            <h4 class=><strong>Patching Weak Convolutional Neural Network Models through Modularization and Composition</strong>
-            <a href="https://gaoxiang9430.github.io/papers/CNNSplitter.pdf"> <img src="images/pdf.png" width="25" height="25"></a>
-            </h4>
-            Binhang Qi, Hailong Sun, Xiang Gao, Hongyu Zhang.
-          <p class="">IEEE/ACM International Conference on Automated Software Engineering (ASE), 2022.</p>
-          </li>
-          <li>
-            <h4 class=><strong>Program Vulnerability Repair via Inductive Inference</strong>
-            <a href="./papers/VulnFix.pdf"> <img src="images/pdf.png" width="25" height="25"></a>
-            </h4>
-            Yuntong Zhang, Xiang Gao, Gregory J. Duck, Abhik Roychoudhury.
-          <p class="">ACM International Symposium on Software Testing and Analysis (ISSTA), 2022.</p>
-          </li>
-          <li>
             <h4 class=><strong>Improving Fault Localization and Program Repair with Deep Semantic Features and Transferred Knowledge</strong>
             </h4>
             Xiangxin Meng, Xu Wang, Hongyu Zhang, Hailong Sun, Xudong Liu.
           <p class="">The 44th International Conference on Software Engineering (ICSE), 2022.</p>
-          </li>
-          <li>
-            <h4 class=><strong>APIfix: Output-Oriented Program Synthesis for Combating Breaking Changes in Libraries</strong>
-            <a href="./papers/APIFix.pdf"> <img src="images/pdf.png" width="25" height="25"></a>
-            </h4>
-            Xiang Gao, Arjun Radhakrishna, Gustavo Soares, Ridwan Shariffdeen, Sumit Gulwani, Abhik Roychoudhury.
-          <p class="">Object-Oriented Programming, Systems, Languages, and Applications (OOPSLA), 2021.</p>
-          </li>
-          <li>
-            <h4 class=><strong>Automated Patch Backporting in Linux (Experience Paper)</strong>
-            <a href="./papers/FixMorph.pdf"> <img src="images/pdf.png" width="25" height="25"></a>
-            <a href="https://www.youtube.com/watch?v=NUNdEJnbTI0"> <img src="images/video.png" width="25" height="25"></a>
-            </h4>
-            Ridwan Shariffdeen, Xiang Gao, Gregory J. Duck, Shin Hwei Tan, Julia Lawall, Abhik Roychoudhury.
-          <p class="">International Symposium on Software Testing and Analysis (ISSTA), 2021.</p>
-          </li>
-            <p><span style="color:red">Distinguished Artifact Award</span></p>          <li>
-            <h4 class=><strong>Learning to Handle Exceptions</strong>
-            </h4>
-            Jian Zhang, Xu Wang, Hongyu Zhang, Hailong Sun, Yanjun Pu, Xudong Liu.
-          <p class="">The 35th IEEE/ACM International Conference on Automated Software Engineering (ASE), 2020.</p>
           </li>
           <li>
             <h4 class=><strong>Retrieval-based Neural Source Code Summarization</strong>
@@ -215,14 +229,17 @@
           <p class="">The 42nd International Conference on Software Engineering (ICSE), 2020.</p>
           </li>
         </ul>
-        
+
       </div>
       <br><br>
     </div>
 
-    <div class="jumbotron jumbotron-fluid" id="pubs">
+    <!--div class="jumbotron jumbotron-fluid" id="pubs">
       <div class="container">
-          <h2><center>Research Team</center></h2><hr>
+        <h2>
+          <center>Research Team</center>
+        </h2>
+        <hr>
         <h3><strong>Faculty</strong></h3>
         <div class="row">
           <div class="col-md-6 col-xs-12 col-sm-12 col-lg-6">
@@ -242,7 +259,6 @@
             <h4 class=""><img src="./images/email.png" width="25" height="25"> sunhl [at] buaa.edu.cn</h4>
           </div>
 
-
           <div class="col-md-6 col-xs-12 col-sm-12 col-lg-6">
             <img class="team-img pull-left" src="images/gaoxiang.jpg">
             <br>
@@ -254,15 +270,18 @@
         </div>
 
         <br>
-        <h3><strong>Students</strong></h3>\n 
+        <h3><strong>Students</strong></h3-->
         <!--STUDENT-LIST-->
 
-      
-      </div>
+
+      <!--/div-->
     </div>
 
     <div class="container" id="teaching">
-        <h2><center>Teaching</center></h2><hr>
+      <h2>
+        <center>Teaching</center>
+      </h2>
+      <hr>
       <h4>Introduction to Open Source Software Development [Fall 2022,2023]</h4>
       <h4>Object-Oriented Programming [Fall 2022]</h4>
       <h4>Intelligent Software Engineering [Spring 2024]</h4>
@@ -272,8 +291,12 @@
 
     <div class="jumbotron jumbotron-fluid" id="contact">
       <div class="container">
-          <h2><center>Hiring</center></h2><hr>
-          We are looking for highly self-motivated intern/master/phd students to work with us. Please send email to sunhl@buaa.edu.cn or xiang_gao@buaa.edu.cn if you are interested. We also have postdoc positions available.
+        <h2>
+          <center>Hiring</center>
+        </h2>
+        <hr>
+        We are looking for highly self-motivated intern/master/phd students to work with us. Please send email to
+        sunhl@buaa.edu.cn or xiang_gao@buaa.edu.cn if you are interested. We also have postdoc positions available.
       </div>
     </div>
 
