@@ -2,7 +2,7 @@
     "students": [
         {
             "name": "Chenfan Li",
-            "image": null,
+            "image": "licenfan.jpg",
             "degree": "Ph.D.",
             "grade": 2024,
             "direction": "TBD",
@@ -11,7 +11,7 @@
         },
         {
             "name": "Yifan An",
-            "image": null,
+            "image": "anyifan.jpg",
             "degree": "Master",
             "grade": 2024,
             "direction": "TBD",
@@ -20,7 +20,7 @@
         },
         {
             "name": "Xingyu Liu",
-            "image": null,
+            "image": "liuxingyu.jpg",
             "degree": "Master",
             "grade": 2024,
             "direction": "TBD",
