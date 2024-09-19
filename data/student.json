@@ -181,24 +181,6 @@
             "group": "SE"
         },
         {
-            "name": "Chunyi Xu",
-            "image": "xuchunyi.jpg",
-            "degree": "Master",
-            "grade": 2021,
-            "direction": "Software Supply Chain",
-            "placement": null,
-            "group": "SE"
-        },
-        {
-            "name": "Rui Sui",
-            "image": "suirui.jpg",
-            "degree": "Master",
-            "grade": 2021,
-            "direction": "Software Supply Chain",
-            "placement": null,
-            "group": "SE"
-        },
-        {
             "name": "Zhaotian Li",
             "image": "lizhaotian.png",
             "degree": "Master",
@@ -246,7 +228,7 @@
         {
             "name": "Qingao Dong",
             "image": "dongqingao.jpg",
-            "degree": "Master",
+            "degree": "Ph.D.",
             "grade": 2022,
             "direction": "Vulnerability Repair",
             "placement": null,
@@ -365,6 +347,24 @@
             "grade": 2020,
             "direction": "SE4AI",
             "placement": null
+        },
+        {
+            "name": "Chunyi Xu",
+            "image": "./images/xuchunyi.jpg",
+            "degree": "Master",
+            "grade": 2021,
+            "direction": "Software Supply Chain",
+            "placement": "Moved to Agricultural Bank of China",
+            "group": "SE"
+        },
+        {
+            "name": "Rui Sui",
+            "image": "./images/suirui.jpg",
+            "degree": "Master",
+            "grade": 2021,
+            "direction": "Software Supply Chain",
+            "placement": "Moved to Agricultural Bank of China",
+            "group": "SE"
         }
     ]
 }
