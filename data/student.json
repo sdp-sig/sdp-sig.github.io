@@ -2,7 +2,7 @@
     "students": [
         {
             "name": "Chenfan Li",
-            "image": null,
+            "image":"licenfan.jpg",
             "degree": "Ph.D.",
             "grade": 2024,
             "direction": "TBD",
@@ -11,7 +11,7 @@
         },
         {
             "name": "Yifan An",
-            "image": null,
+            "image": "anyifan.jpg",
             "degree": "Master",
             "grade": 2024,
             "direction": "TBD",
@@ -20,7 +20,7 @@
         },
         {
             "name": "Xingyu Liu",
-            "image": null,
+            "image": "liuxingyu.jpg",
             "degree": "Master",
             "grade": 2024,
             "direction": "TBD",
@@ -244,15 +244,6 @@
             "group": "SE4AI"
         },
         {
-            "name": "Shuo Hong",
-            "image": "hongshuo.jpg",
-            "degree": "Master",
-            "grade": 2022,
-            "direction": "Static program analysis",
-            "placement": null,
-            "group": "SE"
-        },
-        {
             "name": "Runzhang Chen",
             "image": "chenrunzhang.png",
             "degree": "Master",
@@ -268,77 +259,88 @@
             "image": "qibinhang.jpg",
             "degree": "Ph.D.",
             "grade": 2020,
-            "placement": "Move to NUS as Postdoc"
+            "placement": "Move to NUS as Postdoc",
+            "group":"AI"
         },
         {
             "name": "Zizhe Wang",
             "image": "wangzizhe.jpg",
             "degree": "Ph.D.",
             "grade": 2017,
-            "placement": "Move to Qiyuan Laboratory"
+            "placement": "Move to Qiyuan Laboratory",
+            "group":"AI"
         },
         {
             "name": "Pengpeng Chen",
             "image": "chenpengpeng.jpg",
             "degree": "PhD",
             "grade": null,
-            "placement": "Moved to China Institute of Aeronautical Technology 501"
+            "placement": "Moved to China Institute of Aeronautical Technology 501",
+            "group":"AI"
         },
         {
             "name": "Wei Yuan",
             "image": "yuanwei.jpg",
             "degree": "PhD",
             "grade": null,
-            "placement": "Moved to CCID Group"
+            "placement": "Moved to CCID Group",
+            "group":"AI"
         },
         {
             "name": "Mohammad Ali Shabaz",
-            "image": "https://play-lh.googleusercontent.com/XVHP0sBKrRJYZq_dB1RalwSmx5TcYYRRfYMFO18jgNAnxHAIA1osxM55XHYTb3LpkV8=w240-h480-rw",
+            "image": null,
             "degree": "PhD",
             "grade": null,
-            "placement": "Moved to Pakistan"
+            "placement": "Moved to Pakistan",
+            "group":"AI"
         },
         {
             "name": "Tao Han",
-            "image": "https://play-lh.googleusercontent.com/XVHP0sBKrRJYZq_dB1RalwSmx5TcYYRRfYMFO18jgNAnxHAIA1osxM55XHYTb3LpkV8=w240-h480-rw",
+            "image": null,
             "degree": "PhD",
             "grade": null,
-            "placement": "Moved to Zhejiang Gongshang University"
+            "placement": "Moved to Zhejiang Gongshang University",
+            "group":"AI"
         },
         {
             "name": "Yili Fang",
-            "image": "https://play-lh.googleusercontent.com/XVHP0sBKrRJYZq_dB1RalwSmx5TcYYRRfYMFO18jgNAnxHAIA1osxM55XHYTb3LpkV8=w240-h480-rw",
+            "image": null,
             "degree": "PhD",
             "grade": null,
-            "placement": "Moved to Zhejiang Gongshang University"
+            "placement": "Moved to Zhejiang Gongshang University",
+            "group":"AI"
         },
         {
             "name": "Jing Wang",
-            "image": "https://play-lh.googleusercontent.com/XVHP0sBKrRJYZq_dB1RalwSmx5TcYYRRfYMFO18jgNAnxHAIA1osxM55XHYTb3LpkV8=w240-h480-rw",
+            "image": null,
             "degree": "Master",
             "grade": 2019,
-            "placement": "Moved to Bank of China"
+            "placement": "Moved to Bank of China",
+            "group":"AI"
         },
         {
             "name": "Chongpeng Li",
             "image": "lichongpeng.jpg",
             "degree": "Master",
             "grade": 2020,
-            "placement": null
+            "placement": null,
+            "group":"SE"
         },
         {
             "name": "Yongqiang Yang",
             "image": "yangyongqiang.jpg",
             "degree": "Master",
             "grade": 2020,
-            "placement": null
+            "placement": null,
+            "group":"SE"
         },
         {
             "name": "Haoqian He",
             "image": "hehaoqian.jpg",
             "degree": "Master",
             "grade": 2020,
-            "placement": null
+            "placement": null,
+            "group":"SE"
         },
         {
             "name": "Jingyue Wang",
@@ -346,11 +348,12 @@
             "degree": "Master",
             "grade": 2020,
             "direction": "SE4AI",
-            "placement": null
+            "placement": null,
+            "group":"SE"
         },
         {
             "name": "Chunyi Xu",
-            "image": "./images/xuchunyi.jpg",
+            "image": "xuchunyi.jpg",
             "degree": "Master",
             "grade": 2021,
             "direction": "Software Supply Chain",
@@ -359,11 +362,19 @@
         },
         {
             "name": "Rui Sui",
-            "image": "./images/suirui.jpg",
+            "image": "suirui.jpg",
             "degree": "Master",
             "grade": 2021,
             "direction": "Software Supply Chain",
             "placement": "Moved to Agricultural Bank of China",
+            "group": "SE"
+        },
+        {
+            "name": "Shuo Hong",
+            "image": "hongshuo.jpg",
+            "degree": "Master",
+            "grade": 2022,
+            "placement": "Move to MiHoYo",
             "group": "SE"
         }
     ]
