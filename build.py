@@ -115,19 +115,42 @@ def build_student_list(filter=None):
     return student_list_content
 
 
+# def build_former_student_list(filter=None):
+#     with open('data/student.json') as json_file:
+#         students = json.load(json_file)
+#     # Former students
+#     student_list_content = ""
+#     student_list_content = student_list_content + "        <br>\n \
+#         <h3><strong>Former Students</strong></h3>\n \
+#         <div class=\"row custom-row\">\n"
+#     former_students = students["former_students"]
+#     for student in former_students:
+#         student_content = build_student(student["name"], student["image"], student["degree"],
+#                                         str(student["grade"]), None, student["placement"],)
+#         student_list_content = student_list_content + student_content
+#     student_list_content = student_list_content + "        </div>\n"
+
+#     return student_list_content
+
 def build_former_student_list(filter=None):
+    with open('data/student.json') as json_file:
+        students = json.load(json_file)
     # Former students
+    student_list_content = ""
     student_list_content = student_list_content + "        <br>\n \
         <h3><strong>Former Students</strong></h3>\n \
         <div class=\"row custom-row\">\n"
     former_students = students["former_students"]
     for student in former_students:
+        if filter != None and not filter(student):
+            continue
         student_content = build_student(student["name"], student["image"], student["degree"],
                                         str(student["grade"]), None, student["placement"],)
         student_list_content = student_list_content + student_content
     student_list_content = student_list_content + "        </div>\n"
 
     return student_list_content
+
 
 # Build news
 
@@ -161,6 +184,7 @@ def build_index():
                             "PAPER-LIST", paper_content)
     # student_content = build_student_list()
     # student_content += build_former_student_list()
+    
     # content = generate_html(content, "STUDENT-LIST", student_content)
     ssc_news = build_news_list()
     content = generate_html(content, "NEWS-LIST", ssc_news)
@@ -181,6 +205,9 @@ def build_ssc_page():
 
     def ssc_news_filter(news):
         return news["field"] == "SE"
+    
+    def ssc_former_student_filter(student):
+        return student["group"] == "SE"
 
     ssc_content = read_file("template/ssc.html")
     ssc_phd_content = build_student_list(ssc_phd_filter)
@@ -189,6 +216,10 @@ def build_ssc_page():
     ssc_master_content = build_student_list(ssc_master_filter)
     ssc_content = generate_html(
         ssc_content, "MASTER_STUDENT_AI4SE", ssc_master_content)
+    ssc_former_student_content = build_former_student_list(ssc_former_student_filter)
+    ssc_content = generate_html(
+        ssc_content, "FORMER_STUDENT_AI4SE", ssc_former_student_content)
+    
     paper_content = build_paper_list(ssc_paper_filter)
     ssc_content = generate_html(ssc_content, "PAPER-LIST", paper_content)
     ssc_news = build_news_list(ssc_news_filter)

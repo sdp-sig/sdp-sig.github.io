@@ -1,4 +1,79 @@
-[
+[   
+    {
+        "title": "Enhancing Automated Vulnerability Repair through Dependency Embedding and Pattern Store",
+        "authors": [
+            "Qingao Dong",
+            "Yuanzhang Lin",
+            "Xiang Gao",
+            "Hailong Sun"
+        ],
+        "conference": "IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER)",
+        "year": 2025,
+        "pdf": null,
+        "ppt": null,
+        "tool": null,
+        "video": null,
+        "award": null,
+        "is_selected": false,
+        "field": "AI4SE"
+    },
+    {
+        "title": "Understanding vulnerabilities in software supply chains",
+        "authors": [
+            "Yijun Shen",
+            "Xiang Gao",
+            "Hailong Sun",
+            "Yu Guo"
+        ],
+        "conference": "Empirical Software Engineering (EMSE)",
+        "year": 2025,
+        "pdf": null,
+        "ppt": null,
+        "tool": null,
+        "video": null,
+        "award": null,
+        "is_selected": false,
+        "field": "AI4SE"
+    },
+    {
+        "title": "DynaMO: Protecting Mobile DL Models through Coupling Obfuscated DL Operators ",
+        "authors": [
+            "Mingyi Zhou",
+            "Xiang Gao",
+            "Xiao Chen",
+            "Chunyang Chen",
+            "John Grundy",
+            "Li Li"
+        ],
+        "conference": "International Conference on Automated Software Engineering (ASE)",
+        "year": 2024,
+        "pdf": null,
+        "ppt": null,
+        "tool": null,
+        "video": null,
+        "award": null,
+        "is_selected": false,
+        "field": "AI4SE"
+    },
+    {
+        "title": "LLM-Based Java Concurrent Program to ArkTS Converter",
+        "authors": [
+            "Runlin Liu",
+            "Yuhang Lin",
+            "Yunge Hu",
+            "Zhe Zhang",
+            "Xiang Gao"
+        ],
+        "conference": "International Conference on Automated Software Engineering Tool (ASE)",
+        "year": 2024,
+        "pdf": null,
+        "ppt": null,
+        "tool": null,
+        "video": null,
+        "award": null,
+        "is_selected": false,
+        "field": "AI4SE"
+    },
     {
         "title": "ModelFoundry: A Tool for DNN Modularization and On-demand Model Reuse",
         "authors": [
