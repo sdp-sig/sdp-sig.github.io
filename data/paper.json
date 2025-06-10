@@ -1,5 +1,23 @@
 [   
     {
+        "title": "Enhancing Automated Vulnerability Repair through Dependency Embedding and Pattern Store",
+        "authors": [
+            "Qingao Dong",
+            "Yuanzhang Lin",
+            "Xiang Gao",
+            "Hailong Sun"
+        ],
+        "conference": "IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER)",
+        "year": 2025,
+        "pdf": null,
+        "ppt": null,
+        "tool": null,
+        "video": null,
+        "award": null,
+        "is_selected": false,
+        "field": "AI4SE"
+    },
+    {
         "title": "Understanding vulnerabilities in software supply chains",
         "authors": [
             "Yijun Shen",
