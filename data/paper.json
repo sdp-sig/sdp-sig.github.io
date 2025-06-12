@@ -1,5 +1,45 @@
 [   
     {
+        "title": "Code Property Graph Meets Typestate: A Scalable Framework to Behavioral Bug Detection",
+        "authors": [
+            "Xingjing Deng",
+            "Zhengyao Liu",
+            "Zhong Xitong",
+            "Shuo Hong",
+            "Yixin Yang",
+            "Xiang Gao",
+            "Yan Xuhui",
+            "Hailong Sun"
+        ],
+        "conference": "International Conference on Software Maintenance and Evolution (ICSME)",
+        "year": 2025,
+        "pdf": null,
+        "ppt": null,
+        "tool": null,
+        "video": null,
+        "award": null,
+        "is_selected": false,
+        "field": "AI4SE"
+    },
+    {
+        "title": "Enhanced Vulnerability Localization: Harmonizing Task-Enhanced Tuning and General LLM Prompting",
+        "authors": [
+            "Wentong Tian",
+            "Yuanzhang Lin",
+            "Xiang Gao",
+            "Hailong Sun"
+        ],
+        "conference": "International Conference on Software Maintenance and Evolution (ICSME)",
+        "year": 2025,
+        "pdf": null,
+        "ppt": null,
+        "tool": null,
+        "video": null,
+        "award": null,
+        "is_selected": false,
+        "field": "AI4SE"
+    },
+    {
         "title": "Enhancing Automated Vulnerability Repair through Dependency Embedding and Pattern Store",
         "authors": [
             "Qingao Dong",
