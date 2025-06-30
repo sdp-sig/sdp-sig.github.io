@@ -66,7 +66,7 @@ def build_paper_list(filter=None):
     return paper_list_content
 
 
-def build_student(name, image: str | None, degree, grade, direction, placement):
+def build_student(name, image: str, degree, grade, direction, placement):
     student_content = "          <div class=\"col-md-2 col-sm-4 custom-column\">\n \
             <div class=\"thumbnail\">\n \
               <img class=\"img-circle student-img\" alt=\"...\"\n \

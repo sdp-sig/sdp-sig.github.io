@@ -131,10 +131,12 @@
         </div>
 
         <div class="panel panel-default">
-          <div class="panel-heading"><h4>Static program analysis based on CPG</h4></div>
+          <div class="panel-heading"><h4>Static program analysis based on CPG  <a href="https://github.com/orgs/QVoG-BUAA/repositories">[Link]</a></h4></div>
           <div class="panel-body">
             <img class="img-resonsive pull-left" src="images/cpg.png" width="220">
-            <p>Beyond LLM, we are also working on defect and vulnerability detection based on static program analysis. Our project aims to develop an advanced software quality assurance solution that leverages Code Property Graph (CPG) analysis techniques to automate and enhance defect and vulnerability detection processes. By analyzing the control flow, data flow, and inter-module dependencies within software systems, we seek to identify potential defects, vulnerabilities, and security weaknesses with unprecedented accuracy and efficiency. Specifically, we design algorithm for storing CPG data, efficient strategies for querying CPG, and user-friendly DSL for defining querying patterns. We aim to support various types of program languages, including C, Java, Python and ArkTS.</p>
+            <p>In addition to leveraging LLMs, we are advancing vulnerability detection through static program analysis. Our project focuses on developing a novel Simplified Code Property Graph (S-CPG), which optimizes away unnecessary nodes and edges compared to the original (Joern) while preserving essential semantic information. Currently, we have implemented S-CPG for C, Java, Python, and ArkTS. We also provide a user-friendly Domain Specific Language (DSL) that enables users to define query patterns on S-CPG intuitively and efficiently, without requiring in-depth knowledge of the underlying graph structure. To date, we have identified over 30 issues in open-source projects, with more than 20 confirmed by project developers. Belows are some CVE-ids discovered by our S-CPG:
+              CVE-2024-48210, CVE-2025-25623, CVE-2025-29498, CVE-2025-29499, CVE-2025-29502, CVE-2025-4001, CVE-2025-4002, CVE-2025-4003
+            </p>
           </div>
         </div>
       </div>
