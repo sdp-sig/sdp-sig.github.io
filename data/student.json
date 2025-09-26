@@ -1,6 +1,15 @@
 {
     "students": [
         {
+            "name": "Xiao Li",
+            "image": "lixiao.jpg",
+            "degree": "Master",
+            "grade": 2025,
+            "direction": "Fuzzing",
+            "placement": null,
+            "group": "SE"
+        },
+        {
             "name": "Chenfan Li",
             "image": "licenfan.jpg",
             "degree": "Ph.D.",
