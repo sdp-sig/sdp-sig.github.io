@@ -1,5 +1,10 @@
 [
     {
+        "date": "Sep, 2025",
+        "event": "Our ICSME'25 papers \"Code Property Graph Meets Typestate: A Scalable Framework to Behavioral Bug Detection\" won IEEE TCSE Distinguished Paper Award.",
+        "field": "SE"
+    },
+    {
         "date": "Mar, 2024",
         "event": "Our papers \"API Misuse Detection via Probabilistic Graphical Model\" and \"Model-less Is The Best Model: Generating Pure Code Implementations to Replace On-device DL Models\" have been accepted by ISSTA 2024 research paper track.",
         "field": "SE"
@@ -84,4 +89,5 @@
         "event": "our paper \"Improving Fault Localization and Program Repair with Deep Semantic Features and Transferred Knowledge.\" has been accepted by the ICSE'22 technical papers track.",
         "field": "SE"
     }
+
 ]
