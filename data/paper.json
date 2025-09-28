@@ -22,6 +22,26 @@
         "field": "AI4SE"
     },   
     {
+        "title": "Reference-Based Retrieval Augmentation for Unit Test Generation",
+        "authors": [
+            "Zhe Zhang",
+            "Xingyu Liu",
+            "Yuanzhang Lin",
+            "Xiang Gao",
+            "Hailong Sun",
+            "Yuan Yuan"
+        ],
+        "conference": "ACM Transactions on Software Engineering and Methodology (TOSEM)",
+        "year": 2025,
+        "pdf": null,
+        "ppt": null,
+        "tool": null,
+        "video": null,
+        "award": null,
+        "is_selected": true,
+        "field": "AI4SE"
+    },
+    {
         "title": "Code Property Graph Meets Typestate: A Scalable Framework to Behavioral Bug Detection",
         "authors": [
             "Xingjing Deng",
@@ -39,7 +59,7 @@
         "ppt": null,
         "tool": null,
         "video": null,
-        "award": null,
+        "award": "IEEE TCSE Distinguished Paper Award",
         "is_selected": false,
         "field": "AI4SE"
     },
