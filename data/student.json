@@ -14,7 +14,7 @@
             "image": "licenfan.jpg",
             "degree": "Ph.D.",
             "grade": 2024,
-            "direction": "TBD",
+            "direction": "static analysis",
             "placement": null,
             "group": "SE"
         },
@@ -23,7 +23,7 @@
             "image": "anyifan.jpg",
             "degree": "Master",
             "grade": 2024,
-            "direction": "TBD",
+            "direction": "clone detection",
             "placement": null,
             "group": "SE"
         },
@@ -32,7 +32,7 @@
             "image": "liuxingyu.jpg",
             "degree": "Master",
             "grade": 2024,
-            "direction": "TBD",
+            "direction": "fuzzing",
             "placement": null,
             "group": "SE"
         },
@@ -41,7 +41,7 @@
             "image": null,
             "degree": "Master",
             "grade": 2024,
-            "direction": "TBD",
+            "direction": "UI automation",
             "placement": null,
             "group": "SE"
         },
@@ -50,7 +50,7 @@
             "image": "liuchang.jpg",
             "degree": "Master",
             "grade": 2024,
-            "direction": "TBD",
+            "direction": "static analysis",
             "placement": null,
             "group": "SE"
         },
@@ -59,7 +59,7 @@
             "image": "dengxingjing.jpg",
             "degree": "Master",
             "grade": 2024,
-            "direction": "Static program analysis",
+            "direction": "Static analysis",
             "placement": null,
             "group": "SE"
         },
@@ -358,7 +358,7 @@
             "grade": 2020,
             "direction": "SE4AI",
             "placement": null,
-            "group":"SE"
+            "group":"AI"
         },
         {
             "name": "Chunyi Xu",
@@ -387,4 +387,5 @@
             "group": "SE"
         }
     ]
+
 }
