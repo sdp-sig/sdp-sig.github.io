@@ -1,6 +1,15 @@
 {
     "students": [
         {
+            "name": "Xitong Zhong",
+            "image": null,
+            "degree": "Master",
+            "grade": 2025,
+            "direction": "Static analysis",
+            "placement": null,
+            "group": "SE"
+        },
+        {
             "name": "Xiao Li",
             "image": "lixiao.jpg",
             "degree": "Master",
