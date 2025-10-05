@@ -136,6 +136,15 @@
             "group": "SE"
         },
         {
+            "name": "Ming Li",
+            "image": "liming.jpg",
+            "degree": "Ph.D.",
+            "grade": 2025,
+            "direction": "CI/CD",
+            "placement": null,
+            "group": "SE"
+        },
+        {
             "name": "Zhijun Chen",
             "image": "chenzhijun.jpg",
             "degree": "Ph.D.",
@@ -389,3 +398,4 @@
     ]
 
 }
+
