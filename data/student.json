@@ -28,6 +28,15 @@
             "group": "SE"
         },
         {
+            "name": "Ming Li",
+            "image": "liming.jpg",
+            "degree": "ph.D",
+            "grade": 2025,
+            "direction": "CI/CD",
+            "placement": null,
+            "group": "SE"
+        },
+        {
             "name": "Xiao Li",
             "image": "lixiao.jpg",
             "degree": "Master",
