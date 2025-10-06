@@ -1,6 +1,15 @@
 {
     "students": [
         {
+            "name": "Ruiyang Xu",
+            "image": "xuruiyang.jpg",
+            "degree": "Master",
+            "grade": 2025,
+            "direction": "Software Supply Chain",
+            "placement": null,
+            "group": "SE"
+        },
+        {
             "name": "Xiao Li",
             "image": "lixiao.jpg",
             "degree": "Master",
