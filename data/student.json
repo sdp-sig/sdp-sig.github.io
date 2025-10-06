@@ -28,11 +28,11 @@
             "group": "SE"
         },
         {
-            "name": "Ming Li",
+            "name": "Li Ming",
             "image": "liming.jpg",
-            "degree": "ph.D",
+            "degree": "Ph.D.",
             "grade": 2025,
-            "direction": "CI/CD",
+            "direction": "Vulnerability Analysis",
             "placement": null,
             "group": "SE"
         },
