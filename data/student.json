@@ -1,5 +1,23 @@
 {
     "students": [
+       {
+            "name": "Yao Huang",
+            "image": null,
+            "degree": "Ph.D.",
+            "grade": 2025,
+            "direction": "UI test",
+            "placement": null,
+            "group": "SE"
+       },
+       {
+            "name": "Ruiyang Xu",
+            "image": "xuruiyang.jpg",
+            "degree": "Master",
+            "grade": 2025,
+            "direction": "Software Supply Chain",
+            "placement": null,
+            "group": "SE"
+        },
         {
             "name": "Xitong Zhong",
             "image": null,
@@ -398,3 +416,4 @@
     ]
 
 }
+
