@@ -1,6 +1,15 @@
 {
     "students": [
        {
+            "name": "Yiwen Fu",
+            "image": "yiwenfu.jpg",
+            "degree": "Ph.D.",
+            "grade": 2024,
+            "direction": "Test Generation",
+            "placement": null,
+            "group": "SE"
+       },
+        {
             "name": "Yao Huang",
             "image": null,
             "degree": "Ph.D.",
