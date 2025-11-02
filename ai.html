@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<header>
+  <title>SDP AI Engineering</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./css/style.css">
+  <style>
+    .centered-text {
+      display: inline-block;
+      background-color: #f0f0f0;
+      /* 灰色背景 */
+      border-radius: 8px;
+      /* 圆角 */
+      padding: 5px 10px;
+      /* 文字周围的空间 */
+      margin-top: 10px;
+      /* 与其他元素的间距 */
+      margin-bottom: 10px;
+      /* 与其他元素的间距 */
+    }
+
+    .text-container {
+      text-align: center;
+      /* 居中容器内的内容 */
+      margin: 20px 0;
+      /* 容器的上下外边距 */
+    }
+  </style>
+  <script>
+    $(function () {
+      $(document).scroll(function () {
+        var $nav = $(".navbar-fixed-top");
+        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+      });
+    });
+  </script>
+
+  <nav class="navbar navbar-default navbar-fixed-top navbar-collapse">
+    <div class="container-fluid head-padding">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#" style="color:white; font-size: 12pt;">
+          <strong>AI Engineering</strong>
+        </a>
+      </div>
+      <div class="collapse navbar-collapse offcanvas-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li class=""><a href="./index.html" style="color:white">HOME</a></li>
+          <li class=""><a href="#news" title="news" style="color:white">NEWS</a></li>
+          <!--li class="">
+            <div class="dropdown">
+              <button class="dropbtn" onclick="location.href='#research'">RESEARCH</button>
+              <div class="dropdown-content">
+                <a href="./ssc.html">SE</a>
+                <a href="./ai.html">AI</a>
+                <a href="#def">DEF</a>
+              </div>
+            </div>
+          </li-->
+          <li class=""><a href="#projects" title="projects" style="color:white">RESEARCH</a></li>
+          <li class=""><a href="#team" title="team" style="color:white">TEAM</a></li>
+          <!--li class=""><a href="#team" title="teaching" style="color:white">TEACHING</a></li-->
+          <!--li class=""><a href="#contact" title="contract" style="color:white">CONTACT</a></li-->
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+<body>
+
+
+  <!-- 总体项目介绍，代表性工作，成员信息展示 -->
+  <div class="container mt-5">
+
+    <div class="page" style="padding-top: 150px">
+      <h2 style="text-align: center;"><strong>AI-Engineering</strong></h2>
+      <div class="container-fluid">
+        <!-- project-intro -->
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4><em>What are we doing?</em></h4>
+            </div>
+            <div class="panel-body">
+              <p>In the rapidly evolving landscape of artificial intelligence, the integration of Large Language Models (LLMs) with software engineering has become increasingly critical. As AI systems grow more sophisticated and pervasive, we are at the forefront of addressing the complex challenges that emerge from this convergence.
+              
+              Our research group is deeply committed to advancing the state-of-the-art in AI engineering, with particular focus on cutting-edge areas including model modularization, model retrieval, model security, and multi-agent collaboration.We maintain active engagement with the international research community, regularly contributing to top-tier conferences and journals. 
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page">
+        <div class="jumbotron jumbotron-fluid" id="news">
+          <div class="container">
+            <h2>
+              <center>Recent Updates</center>
+            </h2>
+            <hr>
+            <ul>              
+              <li><strong>Oct, 2025</strong> Our paper "ModularEvo: Evolving Multi-Task Models via Neural Network  Modularization and Composition" has been accepted by ICSE'26 research papers track.</li>
+              <li><strong>Jul, 2025</strong> Our paper "Backdoor Defense via Enhanced Splitting and Trap Isolation. International Conference on Computer Vision" has been accepted by ICCV'25.</li>
+              <li><strong>Jul, 2025</strong> Our research paper "NeMo: A Neuron-Level Modularizing-While-Training Approach for Decomposing DNN Models" has been accepted by ACM Transactions on Software Engineering and Methodology (TOSEM).</li>
+              <li><strong>May, 2025</strong> Our paper "CABS: Conflict-Aware and Balanced Sparsification for Enhancing Model Merging" has been accepted by ICML'25.</li>
+              <li><strong>Jul, 2024</strong> Our paper "FedEvalFair: A Privacy-Preserving and Statistically Grounded Federated Fairness Evaluation Framework" has been accepted by MM'24.</li>
+              <li><strong>Feb, 2024</strong> Our ICSE'24 paper "Modularizing while Training: A New Paradigm for Modularizing DNN Models" won ACM SIGSOFT Distinguished Paper Award.</li>
+              <li><strong>Nov, 2023</strong> our paper "Reusing Convolutional Neural Network Models through Modularization and Composition" has been accepted by TOSEM as research paper.</li>
+              <li><strong>Aug, 2023</strong> our paper "AutoMRM: A Model Retrieval Method Based on Multimodal Query and Meta-learning" has been accepted by the CIKM'23.</li>
+              <li><strong>Jun, 2023</strong> our paper "Modularizing while Training: A New Paradigm for Modularizing DNN Models" has been accepted by the ICSE'24 research papers track.</li>
+              <li><strong>Dec, 2022</strong> Our paper "Reusing Deep Neural Network Models through Model Re-engineering" has been accepted by the ICSE'23 technical track.</li>
+              <li><strong>April, 2022</strong> Our paper "Patching Weak Convolutional Neural Network Models through Modularization and Composition" has been accepted by the ASE'22 research papers track.</li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <h1 id="projects"> Current Projects</h1>
+
+      <div class="panel-group">
+        <div class="panel panel-primary">
+          <div class="panel-heading"><h4>AI Model Reuse</h4></div>
+          <div class="panel-body">
+            <img class="img-resonsive pull-left" src="images/modelreuse.png" width="300">
+            <p>AI models are increasingly treated as reusable software components, yet both large-scale pretraining and task-specific fine-tuning face limitations for efficient reuse at scale. We advocate a modular "decompose + compose" paradigm to enable on-demand reuse and improve the development efficiency of intelligent software. Given an application task and a pool of candidate models, we address three key problems: selecting appropriate reuse granularity to avoid unnecessary overhead; composing multiple models to solve complex tasks beyond a single model’s capability; and accurately retrieving and matching relevant models. We focus on model modularization, model composition, and model retrieval, and will develop practical methods and tools to enable efficient model reuse across domains.</p>
+          </div>
+        </div>
+        <div class="panel panel-warning">
+          <div class="panel-heading"><h4>Multimodal Big Data Modeling and Analysis for IoT</h4></div>
+          <div class="panel-body">
+            <img class="img-resonsive pull-left" src="images/industrialLLM.jpg" width="400">
+            <p>This project focuses on multimodal big data modeling and analysis for Industrial Internet of Things (IIoT), addressing critical application challenges arising from cross-layer, cross-domain multimodal data in industrial IoT systems. The main challenges include difficulties in modeling and management due to multimodal data complexity, lack of industrial mechanisms in large models, and insufficient generalization capabilities of small models leading to ineffective analysis.
+
+            The project aims to tackle two fundamental scientific questions: "How to improve data circulation capabilities in Industrial IoT through hierarchical modeling management" and "How to enhance the effectiveness of Industrial IoT data analysis through collective intelligence fusion methods." We will break through six key technologies: cross-modal data representation modeling, cross-layer data fusion management, cross-domain data tiered pricing, dual-driven industrial large model construction combining data and knowledge, collective intelligence fusion data analysis based on industrial large models, and intelligent operation and scheduling algorithms for Industrial IoT.
+
+            The project will develop an Industrial IoT big data management and analysis platform, with application validation across five typical aerospace industry scenarios. This comprehensive approach will significantly advance the state-of-the-art in industrial IoT data processing and analysis capabilities.</p>
+          </div>
+        </div>
+
+        <div class="panel panel-success">
+          <div class="panel-heading"><h4>Prompt Debugging and Optimization for LLMs</h4></div>
+          <div class="panel-body">
+            <img class="img-resonsive pull-left" src="images/promptdebug.jpg" width="350">
+            <p>In recent years, Large Language Models (e.g., GPT-4, Llama 3, Code Llama) have demonstrated strong capabilities in content generation, translation, and question answering, becoming a foundational technology in AI. However, model outputs are highly sensitive to prompts: the quality of prompt design directly affects generation quality, while the relationship between prompts and outputs is complex and difficult to interpret. Currently, prompt debugging largely depends on iterative trial-and-error and practitioner experience, lacking systematic methods for analysis and optimization, which results in low efficiency and high costs. Compared with traditional programming—where mature debugging toolchains exist—the field of prompt debugging still lacks well-established techniques. This project aims to study efficient and interpretable methods for prompt debugging and optimization, in order to improve the performance of LLM applications and accelerate their broader deployment.</p>
+          </div>
+        </div>
+
+        
+      </div>
+
+
+      <div class="panel panel-info">
+        <div class="panel-heading"><h4>Root Cause Analysis and Localization of Software Failures</h4></div>
+        <div class="panel-body">
+          <img class="img-resonsive pull-left" src="images/faultlocalization.jpg" width="400">
+          <p>Modern systems generate massive, heterogeneous logs that are essential for diagnosing failures but difficult to analyze reliably by hand. With the rise of Large Language Models (LLMs), we investigate intelligent fault scoping and localization by combining multi-source log reasoning and code analysis. We will: (1) build an end-to-end evaluation dataset covering problem descriptions, system logs, and code snippets; (2) develop multi-source log reasoning methods that integrate traditional log modeling with multi-agent LLM reasoning to retrieve fault-related logs and analyze root causes, precisely mapping failures to system modules with clear explanations; and (3) propose retrieval-augmented reasoning for code-level localization, leveraging classic program analysis (e.g., test-based fault localization) to gather evidence, retrieving relevant program knowledge, and using LLM agents to synthesize a final answer as faulty code snippets or call graphs/paths.</p>
+        </div>
+      </div>
+
+      <h1 id="publications"> Publications</h1>
+      <h3><strong>Selected Research Papers</strong></h3>
+        <ul class="">
+          <li>
+            <h4 class=><strong>ModularEvo: Evolving Multi-Task Models via Neural Network Modularization and Composition</strong>
+            </h4>
+            Wenrui Long, Binhang Qi, Hailong Sun, Zongzhen Yang, Ruobing Zhao, Xiang Gao.
+          <p class="">The 48th IEEE/ACM International Conference on Software Engineering (ICSE) 2026.</p>
+          </li>
+          <li>
+            <h4 class=><strong>Backdoor Defense via Enhanced Splitting and Trap Isolation</strong>
+            </h4>
+            Hongrui Yu, Lu Qi, Wanyu Lin, Jian Chen, Hailong Sun, Chengbin Sun.
+          <p class="">International Conference on Computer Vision (ICCV), 2025.</p>
+          </li>
+          <li>
+            <h4 class=><strong>NeMo: A Neuron-Level Modularizing-While-Training Approach for Decomposing DNN Models.</strong>
+            </h4>
+            Xiaohan Bi, Binhang Qi, Hailong Sun, Xiang Gao, Yue Yu, Xiaojun Liang.
+          <p class="">ACM Transactions on Software Engineering and Methodology (TOSEM), 2025.</p>
+          </li>
+          <li>
+            <h4 class=><strong>CABS: Conflict-Aware and Balanced Sparsification for Enhancing Model Merging</strong>
+            </h4>
+            Zongzhen Yang, Binhang Qi, Hailong Sun, Wenrui Long, Ruobin Zhao, Xiang Gao.
+          <p class="">The 42nd International Conference on Machine Learning (ICML), 2025.</p>
+          </li>
+          <li>
+            <h4 class=><strong>Towards Open-World Domain Adaptation via Iteratively Contrastive Learning and Clustering</strong>
+            </h4>
+            Jingzheng Li, Hailong Sun, Jiyi Li, Pengpeng Chen, Shikui Wei.
+          <p class="">IEEE Transactions on Neural Networks and Learning Systems, 2025.</p>
+          </li>
+          <li>
+            <h4 class=><strong>FedEvalFair: A Privacy-Preserving and Statistically Grounded Federated Fairness Evaluation Framework</strong>
+            </h4>
+            Zhongchi Wang, Hailong Sun, Zhengyang Zhao.
+          <p class="">The 32nd ACM International Conference on Multimedia (MM), 2024.</p>
+          </li>
+          <li>
+            <h4 class=><strong>ModelGalaxy: A Versatile Model Retrieval Platform</strong>
+            </h4>
+            Wenling Zhang, Yixiao Li, Zhaotian Li, Hailong Sun, Xiang Gao, Xudong Liu.
+          <p class="">The 47th International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR) - Demonstration track, 2024.</p>
+          </li>
+          <li>
+            <h4 class=><strong>Modularizing while Training: a New Paradigm for Modularizing DNN Models</strong>
+            </h4>
+            Binhang Qi, Hailong Sun, Hongyu Zhang, Ruobin Zhao, Xiang Gao.
+          <p class="">The 46th IEEE/ACM International Conference on Software Engineering (ICSE), 2024.</p>
+          </li>
+            <p><span style="color:red">ACM SIGSOFT Distinguished Paper Award</span></p>          <li>
+            <h4 class=><strong>RA3: Human-in-the-loop Framework for Interpreting and Improving Image Captioning with Relation-Aware Attribution Analysis</strong>
+            </h4>
+            Lei Chai, Lu Qi, Hailong Sun, Jingzheng Li.
+          <p class="">The 40th IEEE International Conference on Data Engineering (ICDE), 2024.</p>
+          </li>
+          <li>
+            <h4 class=><strong>Reusing Convolutional Neural Network Models through Modularization and Composition</strong>
+            </h4>
+            Binhang Qi, Hailong Sun, Hongyu Zhang, Xiang Gao.
+          <p class="">ACM Transactions on Software Engineering and Methodology (TOSEM), 2024.</p>
+          </li>
+          <li>
+            <h4 class=><strong>Target Structure Learning Framework for Unsupervised Multi-Class Domain Adaptation</strong>
+            </h4>
+            Jingzheng Li, Hailong Sun, Lei Chai, Jiyi Li.
+          <p class="">ACM Transactions on Multimedia Computing Communications and Applications (TOMM), 2024.</p>
+          </li>
+          <li>
+            <h4 class=><strong>AutoMRM: A Model Retrieval Method Based on Multimodal Query and Meta-learning</strong>
+            </h4>
+            Zhaotian Li, Binhang Qi, Hailong Sun, Xiang Gao.
+          <p class="">The 32nd ACM International Conference on Information and Knowledge Management (CIKM), 2023.</p>
+          </li>
+          <li>
+            <h4 class=><strong>Black-Box Data Poisoning Attacks on Crowdsourcing</strong>
+            </h4>
+            Pengpeng Chen, Yongqiang Yang, Dingqi Yang, Hailong Sun, Zhijun Chen, Peng Lin.
+          <p class="">The 32nd International Joint Conference on Artificial Intelligence (IJCAI), 2023.</p>
+          </li>
+          <li>
+            <h4 class=><strong>Learning from Noisy Crowd Labels with Logics</strong>
+            </h4>
+            Zhijun Chen, Hailong Sun, Haoqian He, Pengpeng Chen.
+          <p class="">The 39th IEEE International Conference on Data Engineering (ICDE), 2023.</p>
+          </li>
+          <li>
+            <h4 class=><strong>LiFT: Transfer Learning in Vision-Language Models for Downstream Adaptation and Generalization</strong>
+            </h4>
+            Jingzheng Li, Hailong Sun.
+          <p class="">The 31st ACM International Conference on Multimedia (MM), 2023.</p>
+          </li>
+          <li>
+            <h4 class=><strong>Neural-Hidden-CRF: A Robust Weakly-Supervised Sequence Labeler</strong>
+            </h4>
+            Zhijun Chen, Hailong Sun, Wanhao Zhang, Chunyi Xu, Pengpeng Chen.
+          <p class="">The 29th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD), 2023.</p>
+          </li>
+          <li>
+            <h4 class=><strong>Reusing Deep Neural Network Models through Model Re-engineering</strong>
+            </h4>
+            Binhang Qi, Hailong Sun, Xiang Gao, Hongyu Zhang, Zhaotian Li, Xudong Liu.
+          <p class="">The 45th IEEE/ACM International Conference on Software Engineering (ICSE), 2023.</p>
+          </li>
+          <li>
+            <h4 class=><strong>Patching Weak Convolutional Neural Network Models through Modularization and Composition</strong>
+            </h4>
+            Binhang Qi, Hailong Sun, Xiang Gao, Hongyu Zhang.
+          <p class="">The 37th IEEE/ACM International Conference on Automated Software Engineering (ASE), 2022.</p>
+          </li>
+        </ul>
+
+      <!-- team member -->
+      <!-- <h2 style="text-align: center;"><strong><em>Our Team</em></strong></h2> -->
+      <h1 id="team"> Our Team</h1>
+
+      <!-- Teacher -->
+      <h3> <strong>Faculty</strong></h3>
+      <div class="row">
+        <!-- <div class="col-md-6 col-xs-12 col-sm-12 col-lg-6">
+            <img class="team-img pull-left" src="./images/xudong.jpeg" width="260">
+            <br>
+            <h3 class="my-2"><a>Xudong Liu (刘旭东)</a></h3>
+            <h4 class="">Professor</h4>
+            <h4 class="">School of Computer Science and Engineering, Beihang</h4>
+          </div> -->
+
+        <div class="col-md-6 col-xs-12 col-sm-12 col-lg-6">
+          <img class="team-img pull-left" src="./images/avatars/hailong.jpg" width="260">
+          <br>
+          <h3 class="my-2"><a href="https://hsun2022.github.io/">Hailong Sun (孙海龙)</a></h3>
+          <h4 class="">Professor</h4>
+          <h4 class="">School of Software, Beihang</h4>
+          <h4 class=""><img src="./images/email.png" width="25" height="25"> sunhl [at] buaa.edu.cn</h4>
+        </div>
+
+
+        <div class="col-md-6 col-xs-12 col-sm-12 col-lg-6">
+          <img class="team-img pull-left" src="./images/avatars/gaoxiang.jpg">
+          <br>
+          <h3 class="my-2"><a href="https://gaoxiang9430.github.io">Xiang Gao (高祥)</a></h3>
+          <h4 class="">Associate Professor</h4>
+          <h4 class="">School of Software, Beihang</h4>
+          <h4 class=""><img src="./images/email.png" width="25" height="25"> xiang_gao [at] buaa.edu.cn</h4>
+        </div>
+      </div>
+
+
+      <div class="row mt-4" id="student">
+        <div class="col-12">
+          <h3><strong>Students</strong></h3>
+          <h4>Ph.D. Students</h4>
+                  <div class="row custom-row">
+          <div class="col-md-2 col-sm-4 custom-column">
+             <div class="thumbnail">
+               <img class="img-circle student-img" alt="..."
+                 src="./images/avatars/wangzhongchi.jpg">
+               <p class="header">Zhongchi Wang</p>
+               <p class="b">Ph.D. 2021</p>
+              <p class="b">Federated Learning</p>
+            </div>
+           </div>
+          <div class="col-md-2 col-sm-4 custom-column">
+             <div class="thumbnail">
+               <img class="img-circle student-img" alt="..."
+                 src="./images/avatars/bixiaohan.png">
+               <p class="header">Xiaohan Bi</p>
+               <p class="b">Ph.D. 2023</p>
+              <p class="b">DNN model modularization</p>
+            </div>
+           </div>
+          <div class="col-md-2 col-sm-4 custom-column">
+             <div class="thumbnail">
+               <img class="img-circle student-img" alt="..."
+                 src="./images/avatars/zhaoruobing.png">
+               <p class="header">Ruobing Zhao</p>
+               <p class="b">Ph.D. 2023</p>
+              <p class="b">LLM agent-based software defect demarcation and localization</p>
+            </div>
+           </div>
+          <div class="col-md-2 col-sm-4 custom-column">
+             <div class="thumbnail">
+               <img class="img-circle student-img" alt="..."
+                 src="./images/avatars/qilu.jpg">
+               <p class="header">Lu Qi</p>
+               <p class="b">Ph.D. 2024</p>
+              <p class="b">Machine Learning</p>
+            </div>
+           </div>
+          <div class="col-md-2 col-sm-4 custom-column">
+             <div class="thumbnail">
+               <img class="img-circle student-img" alt="..."
+                 src="./images/avatars/wangyuxiang.png">
+               <p class="header">Yuxiang Wang</p>
+               <p class="b">Ph.D. 2024</p>
+              <p class="b">RAG-based industrial big data analytics</p>
+            </div>
+           </div>
+          <div class="col-md-2 col-sm-4 custom-column">
+             <div class="thumbnail">
+               <img class="img-circle student-img" alt="..."
+                 src="./images/avatars/liyixiao.jpeg">
+               <p class="header">Yixiao Li</p>
+               <p class="b">Ph.D. 2024</p>
+              <p class="b">Large model-based time series analysis</p>
+            </div>
+           </div>
+          <div class="col-md-2 col-sm-4 custom-column">
+             <div class="thumbnail">
+               <img class="img-circle student-img" alt="..."
+                 src="./images/avatars/yuhongrui.jpg">
+               <p class="header">Hongrui Yu</p>
+               <p class="b">Ph.D. 2024</p>
+              <p class="b">AI security</p>
+            </div>
+           </div>
+          <div class="col-md-2 col-sm-4 custom-column">
+             <div class="thumbnail">
+               <img class="img-circle student-img" alt="..."
+                 src="./images/avatars/liuyuchen.jpg">
+               <p class="header">Yuchen Liu</p>
+               <p class="b">Ph.D. 2025</p>
+              <p class="b">Large model merging and reuse</p>
+            </div>
+           </div>
+          <div class="col-md-2 col-sm-4 custom-column">
+             <div class="thumbnail">
+               <img class="img-circle student-img" alt="..."
+                 src="./images/avatars/zhanghuinan.png">
+               <p class="header">Huinan Zhang</p>
+               <p class="b">Ph.D. 2025</p>
+              <p class="b">Model retrieval based on model representations</p>
+            </div>
+           </div>
+          <div class="col-md-2 col-sm-4 custom-column">
+             <div class="thumbnail">
+               <img class="img-circle student-img" alt="..."
+                 src="./images/avatars/sunpeng.png">
+               <p class="header">Peng Sun</p>
+               <p class="b">Ph.D. 2025</p>
+              <p class="b">AI4CAE</p>
+            </div>
+           </div>
+        </div>
+
+          
+          <h4>Master's Students</h4>
+                  <div class="row custom-row">
+          <div class="col-md-2 col-sm-4 custom-column">
+             <div class="thumbnail">
+               <img class="img-circle student-img" alt="..."
+                 src="./images/avatars/cat.webp">
+               <p class="header">Wenling Zhang</p>
+               <p class="b">Master 2023</p>
+              <p class="b">Model retrieval</p>
+            </div>
+           </div>
+          <div class="col-md-2 col-sm-4 custom-column">
+             <div class="thumbnail">
+               <img class="img-circle student-img" alt="..."
+                 src="./images/avatars/cat.webp">
+               <p class="header">Zongzhen Yang</p>
+               <p class="b">Master 2023</p>
+              <p class="b">Large model merging and reuse</p>
+            </div>
+           </div>
+          <div class="col-md-2 col-sm-4 custom-column">
+             <div class="thumbnail">
+               <img class="img-circle student-img" alt="..."
+                 src="./images/avatars/cat.webp">
+               <p class="header">Wenrui Long</p>
+               <p class="b">Master 2023</p>
+            </div>
+           </div>
+          <div class="col-md-2 col-sm-4 custom-column">
+             <div class="thumbnail">
+               <img class="img-circle student-img" alt="..."
+                 src="./images/avatars/cat.webp">
+               <p class="header">Hao Gao</p>
+               <p class="b">Master 2023</p>
+              <p class="b">Data processing intelligent agent</p>
+            </div>
+           </div>
+          <div class="col-md-2 col-sm-4 custom-column">
+             <div class="thumbnail">
+               <img class="img-circle student-img" alt="..."
+                 src="./images/avatars/zhaozhengyang.png">
+               <p class="header">Zhengyang Zhao</p>
+               <p class="b">Master 2024</p>
+            </div>
+           </div>
+          <div class="col-md-2 col-sm-4 custom-column">
+             <div class="thumbnail">
+               <img class="img-circle student-img" alt="..."
+                 src="./images/avatars/cat.webp">
+               <p class="header">Haobo Xu</p>
+               <p class="b">Master 2025</p>
+            </div>
+           </div>
+          <div class="col-md-2 col-sm-4 custom-column">
+             <div class="thumbnail">
+               <img class="img-circle student-img" alt="..."
+                 src="./images/avatars/cat.webp">
+               <p class="header">Hang Xu</p>
+               <p class="b">Master 2025</p>
+            </div>
+           </div>
+          <div class="col-md-2 col-sm-4 custom-column">
+             <div class="thumbnail">
+               <img class="img-circle student-img" alt="..."
+                 src="./images/avatars/cat.webp">
+               <p class="header">Yuxin Chen</p>
+               <p class="b">Master 2025</p>
+              <p class="b">Intelligent CAE software</p>
+            </div>
+           </div>
+          <div class="col-md-2 col-sm-4 custom-column">
+             <div class="thumbnail">
+               <img class="img-circle student-img" alt="..."
+                 src="./images/avatars/sikailin.jpg">
+               <p class="header">Kailin Si</p>
+               <p class="b">Master 2025</p>
+              <p class="b">Large model retrieval</p>
+            </div>
+           </div>
+        </div>
+
+
+
+                  <br>
+         <h3><strong>Former Students</strong></h3>
+         <div class="row custom-row">
+          <div class="col-md-2 col-sm-4 custom-column">
+             <div class="thumbnail">
+               <img class="img-circle student-img" alt="..."
+                 src="./images/avatars/qibinhang.jpg">
+               <p class="header">Binhang Qi</p>
+               <p class="b">Ph.D. 2020</p>
+              <p class="b">Move to NUS as Postdoc</p>
+            </div>
+           </div>
+          <div class="col-md-2 col-sm-4 custom-column">
+             <div class="thumbnail">
+               <img class="img-circle student-img" alt="..."
+                 src="./images/avatars/chailei.jpg">
+               <p class="header">Lei Chai</p>
+               <p class="b">Ph.D. 2020</p>
+            </div>
+           </div>
+          <div class="col-md-2 col-sm-4 custom-column">
+             <div class="thumbnail">
+               <img class="img-circle student-img" alt="..."
+                 src="./images/avatars/wangzizhe.jpg">
+               <p class="header">Zizhe Wang</p>
+               <p class="b">Ph.D. 2017</p>
+              <p class="b">Move to Qiyuan Laboratory</p>
+            </div>
+           </div>
+          <div class="col-md-2 col-sm-4 custom-column">
+             <div class="thumbnail">
+               <img class="img-circle student-img" alt="..."
+                 src="./images/avatars/chenpengpeng.jpg">
+               <p class="header">Pengpeng Chen</p>
+               <p class="b">PhD</p>
+              <p class="b">Moved to China Institute of Aeronautical Technology 501</p>
+            </div>
+           </div>
+          <div class="col-md-2 col-sm-4 custom-column">
+             <div class="thumbnail">
+               <img class="img-circle student-img" alt="..."
+                 src="./images/avatars/cat.webp">
+               <p class="header">Jing Wang</p>
+               <p class="b">Master 2019</p>
+              <p class="b">Moved to Bank of China</p>
+            </div>
+           </div>
+        </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
