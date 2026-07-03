@@ -109,60 +109,6 @@
             "group": "SE"
         },
         {
-            "name": "Zhe Zhang",
-            "image": "zhangzhe.jpg",
-            "degree": "Master",
-            "grade": 2023,
-            "direction": "Fuzzing",
-            "placement": null,
-            "group": "SE"
-        },
-        {
-            "name": "Bowen Xu",
-            "image": null,
-            "degree": "Master",
-            "grade": 2023,
-            "direction": "LLM for vulnerability analysis",
-            "placement": null,
-            "group": "SE"
-        },
-        {
-            "name": "Hao Gao",
-            "image": null,
-            "degree": "Master",
-            "grade": 2023,
-            "direction": "LLM for code generation",
-            "placement": null,
-            "group": "SE"
-        },
-        {
-            "name": "Yi Xu",
-            "image": null,
-            "degree": "Master",
-            "grade": 2023,
-            "direction": "Software Supply Chain",
-            "placement": null,
-            "group": "SE"
-        },
-        {
-            "name": "Yu Guo ",
-            "image": null,
-            "degree": "Master",
-            "grade": 2023,
-            "direction": "Software Supply Chain",
-            "placement": null,
-            "group": "SE"
-        },
-        {
-            "name": "Zuozhou Zhang",
-            "image": null,
-            "degree": "Master",
-            "grade": 2023,
-            "direction": "Software Supply Chain",
-            "placement": null,
-            "group": "SE"
-        },
-        {
             "name": "Yuanzhang Lin",
             "image": "linyuanzhang.jpg",
             "degree": "Ph.D.",
@@ -308,6 +254,60 @@
         }
     ],
     "former_students": [
+        {
+            "name": "Zhe Zhang",
+            "image": "zhangzhe.jpg",
+            "degree": "Master",
+            "grade": 2023,
+            "direction": "Fuzzing",
+            "placement": "Move to ByteDance",
+            "group": "SE"
+        },
+        {
+            "name": "Bowen Xu",
+            "image": null,
+            "degree": "Master",
+            "grade": 2023,
+            "direction": "LLM for vulnerability analysis",
+            "placement": "Move to *** Lab",
+            "group": "SE"
+        },
+        {
+            "name": "Hao Gao",
+            "image": null,
+            "degree": "Master",
+            "grade": 2023,
+            "direction": "LLM for code generation",
+            "placement": "Move to JD.com",
+            "group": "SE"
+        },
+        {
+            "name": "Yi Xu",
+            "image": null,
+            "degree": "Master",
+            "grade": 2023,
+            "direction": "Software Supply Chain",
+            "placement": "Move to Huawei",
+            "group": "SE"
+        },
+        {
+            "name": "Yu Guo ",
+            "image": null,
+            "degree": "Master",
+            "grade": 2023,
+            "direction": "Software Supply Chain",
+            "placement": "Move to JD.com",
+            "group": "SE"
+        },
+        {
+            "name": "Zuozhou Zhang",
+            "image": null,
+            "degree": "Master",
+            "grade": 2023,
+            "direction": "Software Supply Chain",
+            "placement": "Move to Meituan",
+            "group": "SE"
+        },
         {
             "name": "Binhang Qi",
             "image": "qibinhang.jpg",
