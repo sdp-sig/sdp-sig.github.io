@@ -41,7 +41,7 @@
     {
         "title": "PGS: Effective LLM Code Refinement via Property-Oriented and Structurally Minimal Feedback",
         "authors": ["Lehan He", "Zeren Chen", "Zhe Zhang", "Xiang Gao", "Lu Sheng"],
-        "conference": "International Conference on Machine Learning (ICML 2026)",
+        "conference": "International Conference on Machine Learning (ICML)",
         "year": 2026,
         "pdf": null,
         "ppt": null,
@@ -54,7 +54,7 @@
     {
         "title": "Efficient Bug Detection by Inferring Implicit API Contract of Pointer State Transition",
         "authors": ["Xingjing Deng", "Yunlong Ma", "Xiang Gao", "Hailong Sun"],
-        "conference": "International Conference on Dependable Systems and Networks (DSN 2026)",
+        "conference": "International Conference on Dependable Systems and Networks (DSN)",
         "year": 2026,
         "pdf": null,
         "ppt": null,
@@ -67,7 +67,7 @@
     {
         "title": "Beyond Superficial Tests: Adversarial Refinement for Reliable Property-Based Testing",
         "authors": ["Xiao Li", "Runlin Liu", "Zhe Zhang", "Xiang Gao", "Hailong Sun"],
-        "conference": "Annual Meeting of the Association for Computational Linguistics (ACL Findings 2026)",
+        "conference": "Annual Meeting of the Association for Computational Linguistics (ACL Findings)",
         "year": 2026,
         "pdf": null,
         "ppt": null,
@@ -80,7 +80,7 @@
     {
         "title": "Code2Bench: Scaling Source and Rigor for Dynamic Benchmark Construction",
         "authors": ["Zhe Zhang", "Runlin Liu", "Aishan Liu", "Xingyu Liu", "Xiang Gao", "Hailong Sun"],
-        "conference": "International Conference on Learning Representations (ICLR) 2026",
+        "conference": "International Conference on Learning Representations (ICLR)",
         "year": 2026,
         "pdf": null,
         "ppt": null,
@@ -93,7 +93,7 @@
     {
         "title": "HapCheck: DSL-Based Static Bug Detection Framework for OpenHarmony",
         "authors": ["Xitong Zhong", "Chang Liu", "Runlin Liu", "Zifu Xu", "Zhengyao Liu", "Juqi Zhou", "Gang Fan", "Mingyi Zhou", "Xiang Gao", "Li Li"],
-        "conference": "International Conference on Software Engineering, SEIP Track (ICSE) 2026",
+        "conference": "International Conference on Software Engineering, SEIP Track (ICSE)",
         "year": 2026,
         "pdf": null,
         "ppt": null,
@@ -106,7 +106,7 @@
     {
         "title": "ModularEvo: Evolving Multi-Task Models via Neural Network Modularization and Composition",
         "authors": ["Wenrui Long", "Binhang Qi", "Hailong Sun", "ZongZhen Yang", "Ruobing Zhao", "Xiang Gao"],
-        "conference": "International Conference on Software Engineering (ICSE) 2026",
+        "conference": "International Conference on Software Engineering (ICSE)",
         "year": 2026,
         "pdf": null,
         "ppt": null,
@@ -119,7 +119,7 @@
     {
         "title": "Understanding Complex Open-Source Industrial Software Supply Chains",
         "authors": ["Yijun Shen", "Hailong Sun", "Guitang Liu", "Yao Huang", "Xiang Gao"],
-        "conference": "International Conference on Software Quality, Reliability and Security",
+        "conference": "International Conference on Software Quality, Reliability and Security (QRS)",
         "year": 2026,
         "pdf": null,
         "ppt": null,
@@ -132,7 +132,7 @@
     {
         "title": "Detecting Vulnerability-Inducing Commits via Multi-Stage Reasoning with LLM-Based Agents",
         "authors": ["Liyou Chen", "Hailong Sun", "Xiang Gao", "Yue Pan"],
-        "conference": "International Conference on Software Quality, Reliability and Security",
+        "conference": "International Conference on Software Quality, Reliability and Security (QRS)",
         "year": 2026,
         "pdf": null,
         "ppt": null,

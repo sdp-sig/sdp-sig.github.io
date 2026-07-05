@@ -1,6 +1,43 @@
 {
     "students": [
        {
+            "name": "Runlin Liu",
+            "image": null,
+            "degree": "Ph.D.",
+            "grade": 2026,
+            "direction": "Agentic System Engineering",
+            "placement": null,
+            "group": "SE"
+        },
+       {
+            "name": "Zifu Xu",
+            "image": null,
+            "degree": "Ph.D.",
+            "grade": 2026,
+            "direction": "Agentic System Engineering",
+            "placement": null,
+            "group": "SE"
+        },
+       {
+            "name": "Juqi Zhou",
+            "image": null,
+            "degree": "Master",
+            "grade": 2026,
+            "direction": "UI Agent",
+            "placement": null,
+            "group": "SE"
+        },
+       {
+            "name": "Xiaohan Cao",
+            "image": null,
+            "degree": "Master",
+            "grade": 2026,
+            "direction": "TBD",
+            "placement": null,
+            "group": "SE"
+        },
+
+        {
             "name": "Yiwen Fu",
             "image": "yiwenfu.jpg",
             "degree": "Ph.D.",
@@ -37,11 +74,11 @@
             "group": "SE"
         },
         {
-            "name": "Li Ming",
+            "name": "Ming Li",
             "image": "liming.jpg",
             "degree": "Ph.D.",
             "grade": 2025,
-            "direction": "Vulnerability Analysis",
+            "direction": "Software Supply Chain",
             "placement": null,
             "group": "SE"
         },
@@ -50,7 +87,7 @@
             "image": "lixiao.jpg",
             "degree": "Master",
             "grade": 2025,
-            "direction": "Fuzzing",
+            "direction": "Test generation",
             "placement": null,
             "group": "SE"
         },
@@ -59,7 +96,7 @@
             "image": "licenfan.jpg",
             "degree": "Ph.D.",
             "grade": 2024,
-            "direction": "static analysis",
+            "direction": "Test generation",
             "placement": null,
             "group": "SE"
         },
