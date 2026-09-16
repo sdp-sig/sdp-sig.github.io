@@ -1,45 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<header>
-  <title>SDP</title>
+<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="./css/style.css">
-  <style>
-    .centered-text {
-      display: inline-block;
-      background-color: #f0f0f0;
-      /* 灰色背景 */
-      border-radius: 8px;
-      /* 圆角 */
-      padding: 5px 10px;
-      /* 文字周围的空间 */
-      margin-top: 10px;
-      /* 与其他元素的间距 */
-      margin-bottom: 10px;
-      /* 与其他元素的间距 */
-    }
+  <title>Software Supply Chain Security</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-    .text-container {
-      text-align: center;
-      /* 居中容器内的内容 */
-      margin: 20px 0;
-      /* 容器的上下外边距 */
-    }
-  </style>
-  <script>
-    $(function () {
-      $(document).scroll(function () {
-        var $nav = $(".navbar-fixed-top");
-        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-      });
-    });
-  </script>
-
-  <nav class="navbar navbar-default navbar-fixed-top navbar-collapse">
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid head-padding">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -47,41 +17,21 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#" style="color:white; font-size: 12pt;">
-          <stong>Software Supply Chain Security</stong>
-        </a>
+        <a class="navbar-brand" href="#"><strong>Software Supply Chain Security</strong></a>
       </div>
       <div class="collapse navbar-collapse offcanvas-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
-          <li class=""><a href="./index.html" style="color:white">HOME</a></li>
-          <li class=""><a href="#news" title="news" style="color:white">NEWS</a></li>
-          <!--li class="">
-            <div class="dropdown">
-              <button class="dropbtn" onclick="location.href='#research'">RESEARCH</button>
-              <div class="dropdown-content">
-                <a href="./ssc.html">SE</a>
-                <a href="#def">DEF</a>
-              </div>
-            </div>
-          </li-->
-          <li class=""><a href="#projects" title="projects" style="color:white">RESEARCH</a></li>
-          <li class=""><a href="#team" title="team" style="color:white">TEAM</a></li>
-          <!--li class=""><a href="#team" title="teaching" style="color:white">TEACHING</a></li-->
-          <!--li class=""><a href="#contact" title="contract" style="color:white">CONTACT</a></li-->
+          <li><a href="./index.html">HOME</a></li>
+          <li><a href="#news" title="news">NEWS</a></li>
+          <li><a href="#projects" title="projects">RESEARCH</a></li>
+          <li><a href="#team" title="team">TEAM</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-</header>
-
-<body>
-
-
-  <!-- 总体项目介绍，代表性工作，成员信息展示 -->
   <div class="container mt-5">
-
-    <div class="page" style="padding-top: 150px">
+    <div class="page" style="padding-top: 90px">
       <h2 style="text-align: center;"><strong>Software Supply Chain Security</strong></h2>
       <div class="container-fluid">
         <!-- project-intro -->
@@ -115,17 +65,17 @@
 
       <div class="panel-group">
         <div class="panel panel-warning">
-          <div class="panel-heading"><h4>Software Supply Chain security</h5></div>
+          <div class="panel-heading"><h4>Software Supply Chain security</h4></div>
           <div class="panel-body">
-            <img class="img-resonsive pull-left" src="images/ssc.png" width="260">
-            <p>Software supply chains play a critical role in delivering reliable and secure software products to end-users. However, recent high-profile security breaches and supply chain attacks have highlighted the vulnerabilities inherent in these systems. This project focuses on enhancing software supply chain security through innovative techniques such as fine-grained program dependency construction, clone detection, vulnerability recognization, vulnerability propagation analysis, security pre-warning, and more. The ultimate goal of this project aligns closely with the principles of AppSecOps, aiming to integrate security practices into the application development and operations processes to enhance the security of software applications throughout their lifecycle. We aims to help organizations build and deploy more secure, resilient, and reliable software applications in today's rapidly evolving threat landscape.</p>
+            <img class="img-responsive pull-left" src="images/ssc.png" width="260">
+            <p>Software supply chains play a critical role in delivering reliable and secure software products to end-users. However, recent high-profile security breaches and supply chain attacks have highlighted the vulnerabilities inherent in these systems. This project focuses on enhancing software supply chain security through innovative techniques such as fine-grained program dependency construction, clone detection, vulnerability recognition, vulnerability propagation analysis, security pre-warning, and more. The ultimate goal of this project aligns closely with the principles of AppSecOps, aiming to integrate security practices into the application development and operations processes to enhance the security of software applications throughout their lifecycle. We aim to help organizations build and deploy more secure, resilient, and reliable software applications in today's rapidly evolving threat landscape.</p>
           </div>
         </div>
 
         <div class="panel panel-success">
           <div class="panel-heading"><h4>LLM for software security analysis</h4></div>
           <div class="panel-body">
-            <img class="img-resonsive pull-left" src="images/llm.png" width="200">
+            <img class="img-responsive pull-left" src="images/llm.png" width="200">
             <p>In response to security and reliability issue in individual programs and software supply chain, this project harnesses the power of Large Language Models (LLMs) to revolutionize software security practices. This project aims to develop an advanced software security solution that leverages LLMs to automate and enhance test case generation, vulnerability detection, localization, and repair processes. By harnessing the immense language understanding capabilities of LLMs, we seek to significantly improve the efficiency, accuracy, and scalability of software security practices.</p>
           </div>
         </div>
@@ -133,33 +83,23 @@
         <div class="panel panel-default">
           <div class="panel-heading"><h4>Static program analysis based on CPG  <a href="https://github.com/orgs/QVoG-BUAA/repositories">[Link]</a></h4></div>
           <div class="panel-body">
-            <img class="img-resonsive pull-left" src="images/cpg.png" width="220">
-            <p>In addition to leveraging LLMs, we are advancing vulnerability detection through static program analysis. Our project focuses on developing a novel Simplified Code Property Graph (S-CPG), which optimizes away unnecessary nodes and edges compared to the original (Joern) while preserving essential semantic information. Currently, we have implemented S-CPG for C, Java, Python, and ArkTS. We also provide a user-friendly Domain Specific Language (DSL) that enables users to define query patterns on S-CPG intuitively and efficiently, without requiring in-depth knowledge of the underlying graph structure. To date, we have identified over 30 issues in open-source projects, with more than 20 confirmed by project developers. Belows are some CVE-ids discovered by our S-CPG:
+            <img class="img-responsive pull-left" src="images/cpg.png" width="220">
+            <p>In addition to leveraging LLMs, we are advancing vulnerability detection through static program analysis. Our project focuses on developing a novel Simplified Code Property Graph (S-CPG), which optimizes away unnecessary nodes and edges compared to the original (Joern) while preserving essential semantic information. Currently, we have implemented S-CPG for C, Java, Python, and ArkTS. We also provide a user-friendly Domain Specific Language (DSL) that enables users to define query patterns on S-CPG intuitively and efficiently, without requiring in-depth knowledge of the underlying graph structure. To date, we have identified over 30 issues in open-source projects, with more than 20 confirmed by project developers. Below are some CVE-ids discovered by our S-CPG:
               CVE-2024-48210, CVE-2025-25623, CVE-2025-29498, CVE-2025-29499, CVE-2025-29502, CVE-2025-4001, CVE-2025-4002, CVE-2025-4003
             </p>
           </div>
         </div>
       </div>
 
-
       <h1 id="publications"> Publications</h1>
       <!--PAPER-LIST-->
 
       <!-- team member -->
-      <!-- <h2 style="text-align: center;"><strong><em>Our Team</em></strong></h2> -->
       <h1 id="team"> Our Team</h1>
 
       <!-- Teacher -->
       <h3> <strong>Faculty</strong></h3>
       <div class="row">
-        <!-- <div class="col-md-6 col-xs-12 col-sm-12 col-lg-6">
-            <img class="team-img pull-left" src="./images/xudong.jpeg" width="260">
-            <br>
-            <h3 class="my-2"><a>Xudong Liu (刘旭东)</a></h3>
-            <h4 class="">Professor</h4>
-            <h4 class="">School of Computer Science and Engineering, Beihang</h4>
-          </div> -->
-
         <div class="col-md-6 col-xs-12 col-sm-12 col-lg-6">
           <img class="team-img pull-left" src="./images/avatars/hailong.jpg" width="260">
           <br>
@@ -168,7 +108,6 @@
           <h4 class="">School of Software, Beihang</h4>
           <h4 class=""><img src="./images/email.png" width="25" height="25"> sunhl [at] buaa.edu.cn</h4>
         </div>
-
 
         <div class="col-md-6 col-xs-12 col-sm-12 col-lg-6">
           <img class="team-img pull-left" src="./images/avatars/gaoxiang.jpg">
@@ -180,17 +119,17 @@
         </div>
       </div>
 
-
       <div class="row mt-4" id="student">
         <div class="col-12">
           <h3><strong>Students</strong></h3>
           <h4>Ph.D. Students</h4>
           <!--PHD_STUDENT_AI4SE-->
-          
+
           <h4>Master's Students</h4>
           <!--MASTER_STUDENT_AI4SE-->
 
-
+          <br>
+          <h3><strong>Former Students</strong></h3>
           <!--FORMER_STUDENT_AI4SE-->
 
         </div>
@@ -198,6 +137,16 @@
     </div>
   </div>
 
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script>
+    $(function () {
+      $(document).scroll(function () {
+        var $nav = $(".navbar-fixed-top");
+        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+      });
+    });
+  </script>
 </body>
 
 </html>

@@ -1,232 +1,371 @@
-html {
-}
+/* ===========================================================
+   SDP-SIG group website — shared stylesheet
+   Modern, responsive, cross-platform friendly
+   =========================================================== */
 
-div.intro {
-  height:100vh;
-  width:100%;
-}
-
+/* Cross-platform font stack with CJK fallbacks */
 body {
-    padding-top:0px;
-    margin-left:auto;
-    margin-right:auto
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB",
+    "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  color: #2b3245;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-div.middle2 {
-  display: block;
-  position: relative;
-  top: 25%;
-  left: 25%;
-  width: 50%; /* Can be in percentage also. */
-  height: auto;
-  vertical-align: middle;
-  text-align: center;
-  background: rgba(55, 55, 55, 0.3);
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 84px; /* keeps anchored sections clear of the fixed navbar */
 }
 
-div.middle {
-  display: block;
-  position: relative;
-  top: 25%;
-  max-width: 1024px;
-  margin-left:auto;
-  margin-right:auto;
-  height: auto;
-  vertical-align: middle;
-  text-align: center;
-  background: rgba(55, 55, 55, 0.3);
-}
-
-div.head-padding{
-  padding-left: 15%;;
-  padding-right:15%;
-}
-
-p {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 12pt;
-}
-
-p.a {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 16 pt;
-  margin-left: 30px;
-}
-
-p.b {
-  font-family: Helvetica, Arial, sans-serif;
-  text-align: center;
-  font-size: 10pt;
-}
-
-p.header {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 14pt;
-  color:blue;
-  text-align: center;
-}
-
-li {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 12pt;
-}
-
+/* ---------- Navigation ---------- */
 .navbar-fixed-top {
-  background-color: rgba(10, 14, 247, 0.3) !important;
-  transition: background-color 200ms linear;
+  background-color: rgba(11, 20, 55, 0.92) !important;
+  border: none !important;
+  transition: background-color .25s ease, box-shadow .25s ease;
 }
-
 .navbar-fixed-top.scrolled {
-  background-color: rgb(9, 11, 26) !important;
-  transition: background-color 200ms linear;
+  background-color: #0b1437 !important;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.22);
+}
+.navbar-fixed-top .navbar-brand,
+.navbar-fixed-top .navbar-nav > li > a {
+  color: #ffffff !important;
+  font-weight: 600;
+  letter-spacing: .02em;
+}
+.navbar-fixed-top .navbar-brand {
+  font-size: 18px;
+}
+.navbar-fixed-top .navbar-nav > li > a:hover,
+.navbar-fixed-top .navbar-nav > li > a:focus {
+  color: #cdd9ff !important;
+  background: transparent !important;
+}
+.navbar-fixed-top .navbar-toggle {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+.navbar-fixed-top .navbar-toggle .icon-bar {
+  background-color: #ffffff;
+}
+.navbar-fixed-top .navbar-collapse {
+  border-color: rgba(255, 255, 255, 0.15);
 }
 
-.thumbnail {
-  background: transparent;
-  border: 0;
+.head-padding {
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
-.teammember {
-  padding: 3px;
-  color: #5a5a5a;
+/* Dropdown (RESEARCH menu on the homepage) */
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
-
-.team-img{
-  width:236px;
-  height:236px;
-  object-fit:cover;
-  border-radius:50%;
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.18);
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 1000;
+  top: 100%;
+  left: 0;
 }
-
-hr {
-  height: 2px;
-  width: 100px;
-  background-color: #0000ff;
+.dropdown-content a {
+  color: #0b1437;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #f2f5fc;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropbtn {
+  background-color: transparent;
+  color: #ffffff;
+  padding: 13px 14px;
+  font-size: 16px;
   border: none;
+  cursor: pointer;
+  font-weight: 600;
 }
 
-/* 文件名：styles.css */
-.img-circle.student-img {
-  border-radius: 50% !important;
-  width: 100px !important;
-  height: 100px !important;
-  object-fit: cover !important;
+/* ---------- Hero / intro (homepage) ---------- */
+div.intro {
+  position: relative;
+  height: 100vh;
+  min-height: 540px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+div.intro::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(8, 12, 35, 0.55), rgba(8, 12, 35, 0.78));
+}
+div.middle {
+  position: relative;
+  z-index: 1;
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 0 24px;
+  text-align: center;
+  background: transparent;
+  height: auto;
+  top: auto;
+}
+.hero-kicker {
+  margin: 0;
+  font-size: clamp(18px, 2vw, 26px);
+  font-weight: 600;
+  letter-spacing: .06em;
+  color: #ffffff;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.5);
+}
+.hero-title {
+  margin: .15em 0;
+  font-size: clamp(34px, 6vw, 72px);
+  font-weight: 800;
+  line-height: 1.08;
+  color: #ffffff;
+  text-shadow: 0 3px 20px rgba(0, 0, 0, 0.55);
+}
+.hero-desc {
+  margin: 1.1em auto 0;
+  max-width: 760px;
+  font-size: clamp(15px, 1.7vw, 20px);
+  color: #ffd874;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
 }
 
-.header a {
-  color: inherit; /* 继承父元素的字体颜色 */
-  text-decoration: none; /* 去除下划线 */
+/* ---------- Layout / page ---------- */
+.page {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.container ul, .container ol, .page ul, .page ol {
+  padding-left: 22px;
 }
 
-.header a:hover {
-  text-decoration: underline; /* 鼠标悬停时添加下划线 */
+/* Section headings */
+.page h2, .container h2 {
+  text-align: center;
+  font-weight: 700;
+  color: #0b1437;
+  margin: 36px 0 6px;
+  letter-spacing: .01em;
 }
-.paper-box {
-  display: flex; /* 启用Flexbox布局 */
-  align-items: center; /* 垂直居中对齐 */
-  justify-content: space-between; /* 元素之间保持等距 */
-  padding: 16px; /* 或者你需要的内边距 */
+hr {
+  height: 3px;
+  width: 96px;
+  background-color: #2f6bff;
+  border: none;
+  border-radius: 3px;
+  margin: 10px auto 28px;
+}
+h3 {
+  color: #16204a;
+  font-weight: 700;
+  margin-top: 22px;
+}
+h4 {
+  font-weight: 700;
+  color: #16204a;
 }
 
-.paper-box-image,
-.paper-box-text {
-  flex: 1; /* 两个盒子将平分可用空间 */
+/* ---------- Cards / panels ---------- */
+.panel {
+  border: none;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(11, 20, 55, 0.08);
+  transition: transform .2s ease, box-shadow .2s ease;
+  overflow: hidden;
+}
+.panel:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(11, 20, 55, 0.14);
+}
+.panel > .panel-heading {
+  border: none;
+  border-bottom: 1px solid #eef1f8;
+  background: #f6f7fb;
+  padding: 16px 20px;
+  font-weight: 700;
+  color: #0b1437;
+}
+.panel > .panel-body {
+  padding: 20px;
+}
+.panel-success > .panel-heading { background: #e8f6ee; color: #1f7a43; border-color: #cdeedd; }
+.panel-warning > .panel-heading { background: #fff6e6; color: #9a6b00; border-color: #ffe6b3; }
+.panel-primary > .panel-heading { background: #e8eefe; color: #274690; border-color: #cdd9ff; }
+.panel-info   > .panel-heading { background: #e6f6fb; color: #1f6b85; border-color: #bfe6f2; }
+.panel-default > .panel-heading { background: #f6f7fb; color: #0b1437; }
+
+/* ---------- News / publications lists ---------- */
+.jumbotron {
+  background: #f5f7fc;
+  border-radius: 16px;
+  padding: 28px 0;
+  margin-top: 16px;
+}
+li h4 {
+  font-size: 17px;
+  margin: 0 0 4px;
+}
+li p {
+  color: #5b6478;
+  margin: 2px 0;
+}
+li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+span[style*="color:red"] {
+  color: #d6336c !important;
+  font-weight: 600;
 }
 
-.paper-box-image {
-  margin-right: 16px; /* 或者你需要的空间，为文本盒子提供一些间隔 */
+/* Collapsible "show all papers" */
+.paper-list {
+  margin-top: 4px;
+}
+.paper-collapse {
+  margin: 4px 0 0;
+}
+.paper-collapse > summary {
+  cursor: pointer;
+  display: inline-block;
+  color: #2f6bff;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 8px 2px;
+  list-style: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.paper-collapse > summary::-webkit-details-marker {
+  display: none;
+}
+.paper-collapse > summary::before {
+  content: "\25B8\00a0";  /* ▸ */
+}
+.paper-collapse[open] > summary::before {
+  content: "\25BE\00a0";  /* ▾ */
+}
+.paper-collapse[open] > summary {
+  color: #16204a;
 }
 
+/* ---------- Images ---------- */
 img {
-  max-width: 100%; /* 确保图像不会超过其容器的宽度 */
-  height: auto; /* 保持图像原始宽高比 */
+  max-width: 100%;
+  height: auto;
+}
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
-.badge {
-  position: absolute; /* 如果需要，可以根据具体情况调整定位 */
-  /* 其他样式 */
+/* ---------- Team / student thumbnails ---------- */
+.team-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #eef1f8;
 }
-
-/* 如果你希望在较小的屏幕上堆叠这些盒子，可以添加一个媒体查询 */
-@media (max-width: 768px) {
-  .paper-box {
-      flex-direction: column; /* 在小屏幕上堆叠盒子 */
-  }
-
-  .paper-box-image {
-      margin-right: 0; /* 在堆叠布局中不需要右边距 */
-  }
-
-  .paper-box-text {
-      margin-top: 16px; /* 在图像下方添加一些间隔 */
-  }
-}
-
-
-#publications {
-  padding-bottom: 10px; /* 或你希望的任何值，为边框提供一些空间 */
-  border-bottom: 2px solid #f0eeee; /* 设置边框的宽度和颜色 */
-  margin-bottom: 20px; /* 在分割线下方提供一些额外空间 */
-}
-
-
-     下拉菜单的基础样式
-    .dropdown {
-      position: relative;
-      display: inline-block;
-  }
-
-  /* 下拉菜单内容 */
-  .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: #f9f9f9;
-      min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      z-index: 1;
-  }
-
-  /* 下拉菜单项 */
-  .dropdown-content a {
-      color: black;
-      padding: 12px 16px;
-      text-decoration: none;
-      display: block;
-  }
-
-  /* 下拉菜单项 - 鼠标悬停时的样式 */
-  .dropdown-content a:hover {background-color: #f1f1f1}
-
-  /* 显示下拉菜单内容 */
-  .dropdown:hover .dropdown-content {
-      display: block;
-  }
-
-  /* 下拉菜单触发器 */
-  .dropbtn {
-      background-color: transparent;
-      color: white;
-      padding: 13px;
-      font-size: 16px;
-      border: none;
-      cursor: pointer;
-  }
-
-
-
-.custom-column-height {
-  height: 200px; /* Set your desired height here */
-}
-
+/* Equal-size student grid: every card is exactly the same dimensions */
 .custom-row {
   display: flex;
   flex-wrap: wrap;
 }
-
 .custom-column {
+  display: flex;
+}
+.thumbnail {
   flex: 1;
-  margin-right: 15px; /* Adjust margin as needed */
-  margin-bottom: 15px; /* Adjust margin as needed */
-  min-width: 150px; /* Set minimum width for columns */
-  max-width: 160px; /* Set maximum width for columns */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 250px;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #eef1f8;
+  border-radius: 14px;
+  padding: 16px 10px;
+  box-shadow: 0 2px 10px rgba(11, 20, 55, 0.06);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+/* On phones, show two cards per row so they stay equal-sized and balanced */
+@media (max-width: 767px) {
+  .custom-column {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+.thumbnail:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(11, 20, 55, 0.12);
+}
+.img-circle.student-img {
+  border-radius: 50% !important;
+  width: 96px !important;
+  height: 96px !important;
+  object-fit: cover !important;
+}
+.header {
+  color: #0b1437;
+  font-weight: 600;
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 2px;
+}
+p.b {
+  color: #6b7385;
+  font-size: 13px;
+  text-align: center;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  text-align: right;
+  color: #97a0b5;
+  font-size: 13px;
+  padding: 24px 20px 32px;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .head-padding {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .navbar-fixed-top .navbar-nav > li > a {
+    padding: 12px 0;
+  }
+  .page {
+    padding: 14px;
+  }
+  .team-img {
+    width: 150px;
+    height: 150px;
+  }
 }

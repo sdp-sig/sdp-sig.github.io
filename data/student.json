@@ -2,7 +2,7 @@
     "students": [
        {
             "name": "Runlin Liu",
-            "image": null,
+            "image": "liurunlin.jpg",
             "degree": "Ph.D.",
             "grade": 2026,
             "direction": "Agentic System Engineering",
@@ -11,7 +11,7 @@
         },
        {
             "name": "Zifu Xu",
-            "image": null,
+            "image": "xuzifu.jpg",
             "degree": "Ph.D.",
             "grade": 2026,
             "direction": "Agentic System Engineering",
@@ -213,7 +213,7 @@
             "image": "chenliyou.jpg",
             "degree": "Ph.D.",
             "grade": 2022,
-            "direction": "Vulnerability recognization",
+            "direction": "Vulnerability recognition",
             "placement": null,
             "group": "SE"
         },

@@ -50,34 +50,49 @@ def build_paper(title, author, conference, year, pdf, tool, video, ppt, award):
     return paper_content
 
 
-def build_paper_list(filter=None):
+def build_paper_list(filter=None, top_n=6):
     with open('data/paper.json') as json_file:
         papers = json.load(json_file)
+    selected = [p for p in papers if (filter is None or filter(p))]
+    selected.sort(key=lambda x: -x["year"])  # newest first
+    visible = selected[:top_n]
+    rest = selected[top_n:]
+
     paper_list_content = "<h3><strong>Selected Research Papers</strong></h3>\n\
-        <ul class=\"\">\n"
-    for paper in papers:
-        if filter != None and not filter(paper):
-            continue
+        <ul class=\"paper-list\">\n"
+    for paper in visible:
         paper_content = build_paper(paper["title"], ", ".join(paper["authors"]),
                                     paper["conference"], str(paper["year"]),
                                     paper["pdf"], paper["tool"], paper["video"], paper["ppt"], paper["award"])
         paper_list_content = paper_list_content + paper_content
     paper_list_content = paper_list_content + "        </ul>"
+
+    if rest:
+        paper_list_content = paper_list_content + "\n        <details class=\"paper-collapse\">\n\
+          <summary>Show all " + str(len(selected)) + " papers</summary>\n\
+          <ul class=\"paper-list\">\n"
+        for paper in rest:
+            paper_content = build_paper(paper["title"], ", ".join(paper["authors"]),
+                                        paper["conference"], str(paper["year"]),
+                                        paper["pdf"], paper["tool"], paper["video"], paper["ppt"], paper["award"])
+            paper_list_content = paper_list_content + paper_content
+        paper_list_content = paper_list_content + "          </ul>\n\
+        </details>"
     return paper_list_content
 
 
-def build_student(name, image: str, degree, grade, direction, placement):
+def build_student(name, image: str, degree, grade, direction, placement, show_grade=False):
     student_content = "          <div class=\"col-md-2 col-sm-4 custom-column\">\n \
-            <div class=\"thumbnail\">\n \
-              <img class=\"img-circle student-img\" alt=\"...\"\n \
-                src=\"IMG\">\n \
-              <p class=\"header\">NAME</p>\n \
-              <p class=\"b\">DEGREE GRADE</p>\n"
+        <div class=\"thumbnail\">\n \
+          <img class=\"img-circle student-img\" alt=\"...\"\n \
+            src=\"IMG\">\n \
+          <p class=\"header\">NAME</p>\n \
+          <p class=\"b\">DEGREE GRADE</p>\n"
     image = f"./images/avatars/{image or 'cat.webp'}"
 
     student_content = student_content.replace("NAME", name).replace("IMG", image)\
                                      .replace("DEGREE", degree)
-    if grade != "None":
+    if show_grade and grade != "None":
         student_content = student_content.replace("GRADE", grade)
     else:
         student_content = student_content.replace(" GRADE", "")
@@ -97,8 +112,9 @@ def build_student_list(filter=None):
         students = json.load(json_file)
     student_list_content = "        <div class=\"row custom-row\">\n"
     # current students
+    # Sort: grade ascending (earliest enrollment first), then degree (Ph.D. before Master), then name
     current_students = sorted(students["students"], key=lambda x: (
-        x["degree"] == "Master", x["grade"]), reverse=False)
+        x["grade"], x["degree"] == "Master", x["name"]))
     for student in current_students:
         if filter != None and not filter(student):
             continue
@@ -140,12 +156,14 @@ def build_former_student_list(filter=None):
     student_list_content = student_list_content + "        <br>\n \
         <h3><strong>Former Students</strong></h3>\n \
         <div class=\"row custom-row\">\n"
-    former_students = students["former_students"]
+    former_students = sorted(students["former_students"], key=lambda x: (
+        -(x["grade"] or 0), x["name"]))
     for student in former_students:
         if filter != None and not filter(student):
             continue
         student_content = build_student(student["name"], student["image"], student["degree"],
-                                        str(student["grade"]), None, student["placement"],)
+                                        str(student["grade"]), None, student["placement"],
+                                        show_grade=True)
         student_list_content = student_list_content + student_content
     student_list_content = student_list_content + "        </div>\n"
 

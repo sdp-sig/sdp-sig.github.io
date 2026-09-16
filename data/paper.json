@@ -1,5 +1,31 @@
 [
     {
+        "title": "SLIT: Execution-Grounded Small Language Models for Issue-Reproducing Test Generation",
+        "authors": ["Runlin Liu", "Zhe Zhang", "Zeren Chen", "Xiang Gao", "Lu Sheng", "Ping yang", "Mu Li", "Hailong Sun"],
+        "conference": "Empirical Methods in Natural Language Processing (EMNLP)",
+        "year": 2026,
+        "pdf": null,
+        "ppt": null,
+        "tool": null,
+        "video": null,
+        "award": null,
+        "is_selected": true,
+        "field": "AI4SE"
+    },
+    {
+        "title": "DepUpgrade: Automating Dependency Upgrade through State-Path Exploration",
+        "authors": ["Xiangxi Ma", "Yifan An", "Wentong Tian", "Xuanqi Wang", "Qingao Dong", "Xiang Gao", "Hailong Sun"],
+        "conference": "International Conference on Automated Software Engineering (ASE)",
+        "year": 2026,
+        "pdf": null,
+        "ppt": null,
+        "tool": null,
+        "video": null,
+        "award": null,
+        "is_selected": true,
+        "field": "AI4SE"
+    },
+    {
         "title": "Type-aware LLM-based Test Generation for Python Programs",
         "authors": ["Runlin Liu", "Zhe Zhang", "Yunge Hu", "Yuhang Lin", "Xiang Gao", "Hailong Sun"],
         "conference": "ACM Transactions on Software Engineering and Methodology (TOSEM)",
